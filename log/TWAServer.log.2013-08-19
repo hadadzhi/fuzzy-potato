@@ -1,0 +1,523 @@
+19.08.13 15:24:12,988 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:25:18,131 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:25:30,899 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:25:30,900 DEBUG [main]: SerialTest      - Java   serialization: 9154 nanoseconds, size = 261, throughtput ~= 218483 packets/s
+19.08.13 15:25:30,900 DEBUG [main]: SerialTest      - Toy    serialization: 2740 nanoseconds, size = 185, throughtput ~= 729927 packets/s
+19.08.13 15:25:30,900 DEBUG [main]: SerialTest      - Manual serialization: 820 nanoseconds, size = 127, throughtput ~= 2439024 packets/s
+19.08.13 15:25:30,900 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit..., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:29:28,573 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:30:07,285 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:30:37,307 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:30:50,902 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:30:50,903 DEBUG [main]: SerialTest      - Java   serialization: 10080 nanoseconds, size = 261, throughtput ~= 198412 packets/s
+19.08.13 15:30:50,903 DEBUG [main]: SerialTest      - Toy    serialization: 2756 nanoseconds, size = 185, throughtput ~= 725689 packets/s
+19.08.13 15:30:50,903 DEBUG [main]: SerialTest      - Manual serialization: 831 nanoseconds, size = 127, throughtput ~= 2406738 packets/s
+19.08.13 15:30:50,903 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit..., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:31:15,624 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:36:52,375 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:37:59,694 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:38:12,946 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:38:12,946 DEBUG [main]: SerialTest      - Java   serialization: 9546 nanoseconds, size = 261, throughtput ~= 209511 packets/s
+19.08.13 15:38:12,947 DEBUG [main]: SerialTest      - Toy    serialization: 2784 nanoseconds, size = 185, throughtput ~= 718390 packets/s
+19.08.13 15:38:12,947 DEBUG [main]: SerialTest      - Manual serialization: 823 nanoseconds, size = 127, throughtput ~= 2430133 packets/s
+19.08.13 15:38:12,947 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit..., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:40:05,988 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:41:12,421 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:41:25,465 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:41:25,466 DEBUG [main]: SerialTest      - Java   serialization: 9520 nanoseconds, size = 261, throughtput ~= 210084 packets/s
+19.08.13 15:41:25,466 DEBUG [main]: SerialTest      - Toy    serialization: 2680 nanoseconds, size = 185, throughtput ~= 746268 packets/s
+19.08.13 15:41:25,466 DEBUG [main]: SerialTest      - Manual serialization: 822 nanoseconds, size = 127, throughtput ~= 2433090 packets/s
+19.08.13 15:41:25,466 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit..., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:43:36,002 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:44:43,484 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:44:56,757 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:44:56,758 DEBUG [main]: SerialTest      - Java   serialization: 9430 nanoseconds, size = 326, throughtput ~= 212089 packets/s
+19.08.13 15:44:56,758 DEBUG [main]: SerialTest      - Toy    serialization: 2821 nanoseconds, size = 250, throughtput ~= 708968 packets/s
+19.08.13 15:44:56,758 DEBUG [main]: SerialTest      - Manual serialization: 972 nanoseconds, size = 192, throughtput ~= 2057613 packets/s
+19.08.13 15:44:56,758 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:45:21,661 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:46:29,471 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:46:42,838 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:46:42,838 DEBUG [main]: SerialTest      - Java   serialization: 9606 nanoseconds, size = 326, throughtput ~= 208203 packets/s
+19.08.13 15:46:42,838 DEBUG [main]: SerialTest      - Toy    serialization: 2772 nanoseconds, size = 250, throughtput ~= 721500 packets/s
+19.08.13 15:46:42,839 DEBUG [main]: SerialTest      - Manual serialization: 956 nanoseconds, size = 192, throughtput ~= 2092050 packets/s
+19.08.13 15:46:42,839 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:48:28,235 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:49:36,911 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:49:50,458 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:49:50,459 DEBUG [main]: SerialTest      - Java   serialization: 9780 nanoseconds, size = 326, throughtput ~= 204498 packets/s
+19.08.13 15:49:50,459 DEBUG [main]: SerialTest      - Toy    serialization: 2762 nanoseconds, size = 250, throughtput ~= 724112 packets/s
+19.08.13 15:49:50,459 DEBUG [main]: SerialTest      - Manual serialization: 955 nanoseconds, size = 192, throughtput ~= 2094240 packets/s
+19.08.13 15:49:50,459 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 15:53:12,935 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 15:54:22,091 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 15:54:35,714 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 15:54:35,715 DEBUG [main]: SerialTest      - Java   serialization: 9817 nanoseconds, size = 326, throughtput ~= 203728 packets/s
+19.08.13 15:54:35,715 DEBUG [main]: SerialTest      - Toy    serialization: 2807 nanoseconds, size = 250, throughtput ~= 712504 packets/s
+19.08.13 15:54:35,715 DEBUG [main]: SerialTest      - Manual serialization: 990 nanoseconds, size = 192, throughtput ~= 2020202 packets/s
+19.08.13 15:54:35,715 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 16:03:26,291 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 16:04:35,723 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 16:04:49,381 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 16:04:49,381 DEBUG [main]: SerialTest      - Java   serialization: 9962 nanoseconds, size = 326, throughtput ~= 200762 packets/s
+19.08.13 16:04:49,382 DEBUG [main]: SerialTest      - Toy    serialization: 2751 nanoseconds, size = 250, throughtput ~= 727008 packets/s
+19.08.13 16:04:49,382 DEBUG [main]: SerialTest      - Manual serialization: 956 nanoseconds, size = 192, throughtput ~= 2092050 packets/s
+19.08.13 16:04:49,382 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 16:20:42,077 DEBUG [main]: StringTest      - Warming up...
+19.08.13 16:21:03,770 DEBUG [main]: StringTest      - Their:       358 nanoseconds
+19.08.13 16:21:04,105 DEBUG [main]: StringTest      - My:          333 nanoseconds
+19.08.13 16:21:04,106 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+19.08.13 16:21:36,880 DEBUG [main]: StringTest      - Warming up...
+19.08.13 16:22:05,245 DEBUG [main]: StringTest      - Their: 563 nanoseconds
+19.08.13 16:22:05,577 DEBUG [main]: StringTest      - My:    328 nanoseconds
+19.08.13 16:22:05,577 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+19.08.13 16:22:23,303 DEBUG [main]: StringTest      - Warming up...
+19.08.13 16:22:54,832 DEBUG [main]: StringTest      - Their: 568 nanoseconds
+19.08.13 16:22:55,269 DEBUG [main]: StringTest      - My:    429 nanoseconds
+19.08.13 16:22:55,269 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+19.08.13 16:23:32,100 DEBUG [main]: StringTest      - Warming up...
+19.08.13 16:24:03,682 DEBUG [main]: StringTest      - Their: 571 nanoseconds
+19.08.13 16:24:04,119 DEBUG [main]: StringTest      - My:    432 nanoseconds
+19.08.13 16:24:04,119 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+19.08.13 16:40:57,531 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 16:40:57,622 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 16:40:57,627 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 16:40:57,629 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 16:40:57,630 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 16:40:57,648 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 16:40:57,648 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 16:40:57,675 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.dom4j.DocumentException: D:\Projects\TWAServer\hibernate-configuration-4.0.xsd (The system cannot find the file specified) Nested exception: D:\Projects\TWAServer\hibernate-configuration-4.0.xsd (The system cannot find the file specified)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:484)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 16:56:24,283 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 16:57:32,294 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 16:57:45,792 DEBUG [main]: SerialTest      - Construction: 10 nanoseconds
+19.08.13 16:57:45,793 DEBUG [main]: SerialTest      - Java   serialization: 9554 nanoseconds, size = 326, throughtput ~= 209336 packets/s
+19.08.13 16:57:45,793 DEBUG [main]: SerialTest      - Toy    serialization: 2750 nanoseconds, size = 250, throughtput ~= 727272 packets/s
+19.08.13 16:57:45,793 DEBUG [main]: SerialTest      - Manual serialization: 980 nanoseconds, size = 192, throughtput ~= 2040816 packets/s
+19.08.13 16:57:45,793 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 16:57:45,876 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 16:57:45,958 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 16:57:45,963 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 16:57:45,965 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 16:57:45,967 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 16:57:45,985 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 16:57:45,986 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 16:57:46,010 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.dom4j.DocumentException: D:\Projects\TWAServer\hibernate-configuration-3.0.dtd (The system cannot find the file specified) Nested exception: D:\Projects\TWAServer\hibernate-configuration-3.0.dtd (The system cannot find the file specified)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:484)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 17:05:04,593 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 17:05:04,670 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 17:05:04,676 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 17:05:04,677 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 17:05:04,679 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 17:05:04,697 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 17:05:04,697 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 17:05:04,719 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.dom4j.DocumentException: D:\Projects\TWAServer\hibernate-configuration-3.0.dtd (The system cannot find the file specified) Nested exception: D:\Projects\TWAServer\hibernate-configuration-3.0.dtd (The system cannot find the file specified)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:484)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 17:05:26,718 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 17:05:26,795 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 17:05:26,800 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 17:05:26,802 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 17:05:26,804 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 17:05:26,822 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 17:05:26,822 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 17:05:26,845 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.dom4j.DocumentException: D:\Projects\TWAServer\src\conf\hibernate-configuration-3.0.dtd (The system cannot find the file specified) Nested exception: D:\Projects\TWAServer\src\conf\hibernate-configuration-3.0.dtd (The system cannot find the file specified)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:484)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 17:05:52,122 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 17:05:52,199 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 17:05:52,205 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 17:05:52,206 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 17:05:52,208 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 17:05:52,225 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 17:05:52,226 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 17:05:52,276 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.dom4j.DocumentException: Error on line 2 of document  : White spaces are required between publicId and systemId. Nested exception: White spaces are required between publicId and systemId.
+	at org.dom4j.io.SAXReader.read(SAXReader.java:482)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 17:06:18,828 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 17:06:18,905 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 17:06:18,910 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 17:06:18,912 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 17:06:18,913 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 17:06:18,931 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 17:06:18,932 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 17:06:18,970 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.MappingException: invalid configuration
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2091)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 26; Element type "hibernate-configuration" must be declared.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:376)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3065)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 17:08:04,236 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 17:08:04,314 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 17:08:04,320 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 17:08:04,322 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 17:08:04,323 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 17:08:04,340 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 17:08:04,341 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 17:08:04,363 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:31)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:136)
+Caused by: org.dom4j.DocumentException: D:\Projects\TWAServer\hibernate-configuration-3.0.dtd (The system cannot find the file specified) Nested exception: D:\Projects\TWAServer\hibernate-configuration-3.0.dtd (The system cannot find the file specified)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:484)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+19.08.13 17:12:23,350 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 17:12:23,427 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 17:12:23,432 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 17:12:23,434 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 17:12:23,435 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 17:12:23,452 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 17:12:23,453 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 17:12:23,473 WARN  [main]: DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+19.08.13 17:12:23,517 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+19.08.13 17:12:23,590 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+19.08.13 17:12:23,600 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+19.08.13 17:12:23,600 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+19.08.13 17:12:23,601 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+19.08.13 17:12:23,601 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+19.08.13 17:12:23,943 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+19.08.13 17:12:24,099 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+19.08.13 17:12:24,103 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+19.08.13 17:12:24,288 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+19.08.13 17:12:24,289 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+19.08.13 17:12:24,537 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+19.08.13 17:12:24,691 DEBUG [main]: SQL             - drop table if exists GameCharacter
+19.08.13 17:12:24,732 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+19.08.13 17:12:24,757 DEBUG [main]: SQL             - drop table if exists Item
+19.08.13 17:12:24,799 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+19.08.13 17:12:24,857 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+19.08.13 17:12:24,907 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+19.08.13 17:12:24,986 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+19.08.13 17:12:25,174 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+19.08.13 17:12:25,349 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+19.08.13 17:12:25,385 INFO  [main]: HibernateTest   - Creating items and characters
+19.08.13 17:12:25,385 INFO  [main]: HibernateTest   - Adding items to characters
+19.08.13 17:12:25,385 INFO  [main]: HibernateTest   - Saving items and characters to the database
+19.08.13 17:12:25,423 DEBUG [main]: SQL             - insert into Item (name) values (?)
+19.08.13 17:12:25,441 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 17:12:25,444 DEBUG [main]: SQL             - insert into Item (name) values (?)
+19.08.13 17:12:25,444 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 17:12:25,449 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+19.08.13 17:12:25,449 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 17:12:25,450 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+19.08.13 17:12:25,450 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 17:12:25,472 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 17:12:25,479 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 17:12:25,479 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 17:12:25,593 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 17:12:25,596 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 17:12:25,597 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+19.08.13 17:12:25,597 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+19.08.13 17:12:25,598 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+19.08.13 17:12:25,604 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+19.08.13 17:12:25,605 INFO  [main]: HibernateTest   - Loaded 1 characters
+19.08.13 17:12:25,605 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+19.08.13 17:12:25,605 INFO  [main]: HibernateTest   - Saving changes to the database
+19.08.13 17:12:25,606 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 17:12:25,624 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 17:12:25,624 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 17:12:25,625 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+19.08.13 17:12:25,625 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8, Еще еда=1}
+19.08.13 17:12:25,625 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+19.08.13 17:12:25,627 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+19.08.13 17:12:25,628 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+19.08.13 17:12:25,649 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 17:12:25,649 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 17:12:25,649 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+19.08.13 17:12:25,651 DEBUG [main]: HibernateTest   - Finished in 266 milliseconds
+19.08.13 18:33:16,593 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 18:33:16,671 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 18:33:16,676 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 18:33:16,678 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 18:33:16,679 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 18:33:16,697 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 18:33:16,697 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 18:33:16,718 WARN  [main]: DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+19.08.13 18:33:16,739 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+19.08.13 18:33:16,774 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+19.08.13 18:33:16,778 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+19.08.13 18:33:16,778 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+19.08.13 18:33:16,779 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+19.08.13 18:33:16,779 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+19.08.13 18:33:16,863 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+19.08.13 18:33:16,997 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+19.08.13 18:33:17,001 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+19.08.13 18:33:17,158 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+19.08.13 18:33:17,159 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+19.08.13 18:33:17,317 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+19.08.13 18:33:17,484 DEBUG [main]: SQL             - drop table if exists GameCharacter
+19.08.13 18:33:17,509 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+19.08.13 18:33:17,534 DEBUG [main]: SQL             - drop table if exists Item
+19.08.13 18:33:17,559 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+19.08.13 18:33:17,609 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+19.08.13 18:33:17,659 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+19.08.13 18:33:17,703 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+19.08.13 18:33:17,939 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+19.08.13 18:33:18,076 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+19.08.13 18:33:18,111 INFO  [main]: HibernateTest   - Creating items and characters
+19.08.13 18:33:18,111 INFO  [main]: HibernateTest   - Adding items to characters
+19.08.13 18:33:18,111 INFO  [main]: HibernateTest   - Saving items and characters to the database
+19.08.13 18:33:18,149 DEBUG [main]: SQL             - insert into Item (name) values (?)
+19.08.13 18:33:18,157 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:18,160 DEBUG [main]: SQL             - insert into Item (name) values (?)
+19.08.13 18:33:18,160 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:18,165 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+19.08.13 18:33:18,166 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:18,166 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+19.08.13 18:33:18,166 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:18,176 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:18,178 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:18,179 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:18,274 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 18:33:18,277 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 18:33:18,278 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+19.08.13 18:33:18,278 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+19.08.13 18:33:18,279 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+19.08.13 18:33:18,285 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+19.08.13 18:33:18,286 INFO  [main]: HibernateTest   - Loaded 1 characters
+19.08.13 18:33:18,286 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+19.08.13 18:33:18,286 INFO  [main]: HibernateTest   - Saving changes to the database
+19.08.13 18:33:18,287 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:18,309 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 18:33:18,309 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 18:33:18,309 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+19.08.13 18:33:18,310 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еще еда=1, Еда=8}
+19.08.13 18:33:18,310 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+19.08.13 18:33:18,312 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+19.08.13 18:33:18,312 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+19.08.13 18:33:18,334 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 18:33:18,334 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 18:33:18,334 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+19.08.13 18:33:18,336 DEBUG [main]: HibernateTest   - Finished in 225 milliseconds
+19.08.13 18:33:22,701 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+19.08.13 18:33:22,778 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19.08.13 18:33:22,783 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+19.08.13 18:33:22,785 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+19.08.13 18:33:22,787 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+19.08.13 18:33:22,804 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+19.08.13 18:33:22,804 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+19.08.13 18:33:22,825 WARN  [main]: DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+19.08.13 18:33:22,846 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+19.08.13 18:33:22,882 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+19.08.13 18:33:22,886 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+19.08.13 18:33:22,886 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+19.08.13 18:33:22,887 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+19.08.13 18:33:22,887 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+19.08.13 18:33:22,970 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+19.08.13 18:33:23,104 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+19.08.13 18:33:23,108 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+19.08.13 18:33:23,268 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+19.08.13 18:33:23,270 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+19.08.13 18:33:23,433 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+19.08.13 18:33:23,558 DEBUG [main]: SQL             - drop table if exists GameCharacter
+19.08.13 18:33:23,575 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+19.08.13 18:33:23,606 DEBUG [main]: SQL             - drop table if exists Item
+19.08.13 18:33:23,625 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+19.08.13 18:33:23,700 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+19.08.13 18:33:23,776 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+19.08.13 18:33:23,883 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+19.08.13 18:33:24,025 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+19.08.13 18:33:24,192 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+19.08.13 18:33:24,227 INFO  [main]: HibernateTest   - Creating items and characters
+19.08.13 18:33:24,227 INFO  [main]: HibernateTest   - Adding items to characters
+19.08.13 18:33:24,227 INFO  [main]: HibernateTest   - Saving items and characters to the database
+19.08.13 18:33:24,265 DEBUG [main]: SQL             - insert into Item (name) values (?)
+19.08.13 18:33:24,272 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:24,275 DEBUG [main]: SQL             - insert into Item (name) values (?)
+19.08.13 18:33:24,275 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:24,280 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+19.08.13 18:33:24,281 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:24,281 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+19.08.13 18:33:24,281 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+19.08.13 18:33:24,292 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:24,294 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:24,294 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:24,391 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 18:33:24,394 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 18:33:24,394 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+19.08.13 18:33:24,394 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+19.08.13 18:33:24,395 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+19.08.13 18:33:24,403 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+19.08.13 18:33:24,403 INFO  [main]: HibernateTest   - Loaded 1 characters
+19.08.13 18:33:24,404 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+19.08.13 18:33:24,404 INFO  [main]: HibernateTest   - Saving changes to the database
+19.08.13 18:33:24,405 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+19.08.13 18:33:24,425 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 18:33:24,426 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 18:33:24,426 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+19.08.13 18:33:24,426 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еще еда=1, Еда=8}
+19.08.13 18:33:24,426 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+19.08.13 18:33:24,428 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+19.08.13 18:33:24,428 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+19.08.13 18:33:24,450 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+19.08.13 18:33:24,450 INFO  [main]: HibernateTest   - List of characters:
+19.08.13 18:33:24,450 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+19.08.13 18:33:24,452 DEBUG [main]: HibernateTest   - Finished in 225 milliseconds
+19.08.13 18:33:34,956 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 18:34:44,660 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 18:34:58,063 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 18:34:58,064 DEBUG [main]: SerialTest      - Java   serialization: 9564 nanoseconds, size = 326, throughtput ~= 209117 packets/s
+19.08.13 18:34:58,064 DEBUG [main]: SerialTest      - Toy    serialization: 2784 nanoseconds, size = 250, throughtput ~= 718390 packets/s
+19.08.13 18:34:58,064 DEBUG [main]: SerialTest      - Manual serialization: 956 nanoseconds, size = 192, throughtput ~= 2092050 packets/s
+19.08.13 18:34:58,064 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 18:37:17,575 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 18:38:26,746 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 18:38:40,414 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 18:38:40,414 DEBUG [main]: SerialTest      - Java   serialization: 9681 nanoseconds, size = 326, throughtput ~= 206590 packets/s
+19.08.13 18:38:40,414 DEBUG [main]: SerialTest      - Toy    serialization: 2731 nanoseconds, size = 250, throughtput ~= 732332 packets/s
+19.08.13 18:38:40,414 DEBUG [main]: SerialTest      - Manual serialization: 966 nanoseconds, size = 192, throughtput ~= 2070393 packets/s
+19.08.13 18:38:40,415 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 19:17:55,052 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 19:19:03,085 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 19:19:16,482 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 19:19:16,483 DEBUG [main]: SerialTest      - Java   serialization: 9671 nanoseconds, size = 326, throughtput ~= 206803 packets/s
+19.08.13 19:19:16,483 DEBUG [main]: SerialTest      - Toy    serialization: 2759 nanoseconds, size = 250, throughtput ~= 724900 packets/s
+19.08.13 19:19:16,483 DEBUG [main]: SerialTest      - Manual serialization: 959 nanoseconds, size = 192, throughtput ~= 2085505 packets/s
+19.08.13 19:19:16,483 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 19:24:53,938 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 19:26:03,731 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 19:26:17,495 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 19:26:17,495 DEBUG [main]: SerialTest      - Java   serialization: 9893 nanoseconds, size = 326, throughtput ~= 202163 packets/s
+19.08.13 19:26:17,495 DEBUG [main]: SerialTest      - Toy    serialization: 2841 nanoseconds, size = 250, throughtput ~= 703977 packets/s
+19.08.13 19:26:17,496 DEBUG [main]: SerialTest      - Manual serialization: 957 nanoseconds, size = 192, throughtput ~= 2089864 packets/s
+19.08.13 19:26:17,496 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 19:32:04,838 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 19:33:13,686 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 19:33:27,214 DEBUG [main]: SerialTest      - Construction: 6 nanoseconds
+19.08.13 19:33:27,214 DEBUG [main]: SerialTest      - Java   serialization: 9676 nanoseconds, size = 326, throughtput ~= 206696 packets/s
+19.08.13 19:33:27,215 DEBUG [main]: SerialTest      - Toy    serialization: 2837 nanoseconds, size = 250, throughtput ~= 704970 packets/s
+19.08.13 19:33:27,215 DEBUG [main]: SerialTest      - Manual serialization: 990 nanoseconds, size = 192, throughtput ~= 2020202 packets/s
+19.08.13 19:33:27,215 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 19:40:52,826 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 19:42:01,828 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 19:42:15,468 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 19:42:15,468 DEBUG [main]: SerialTest      - Java   serialization: 9701 nanoseconds, size = 326, throughtput ~= 206164 packets/s
+19.08.13 19:42:15,468 DEBUG [main]: SerialTest      - Toy    serialization: 2781 nanoseconds, size = 250, throughtput ~= 719165 packets/s
+19.08.13 19:42:15,468 DEBUG [main]: SerialTest      - Manual serialization: 960 nanoseconds, size = 192, throughtput ~= 2083333 packets/s
+19.08.13 19:42:15,469 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 20:10:13,208 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 20:11:22,841 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 20:11:36,638 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 20:11:36,639 DEBUG [main]: SerialTest      - Java   serialization: 9852 nanoseconds, size = 326, throughtput ~= 203004 packets/s
+19.08.13 20:11:36,639 DEBUG [main]: SerialTest      - Toy    serialization: 2802 nanoseconds, size = 250, throughtput ~= 713775 packets/s
+19.08.13 20:11:36,639 DEBUG [main]: SerialTest      - Manual serialization: 965 nanoseconds, size = 192, throughtput ~= 2072538 packets/s
+19.08.13 20:11:36,639 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 20:11:44,569 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 20:12:54,393 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 20:13:07,884 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 20:13:07,885 DEBUG [main]: SerialTest      - Java   serialization: 9775 nanoseconds, size = 326, throughtput ~= 204603 packets/s
+19.08.13 20:13:07,885 DEBUG [main]: SerialTest      - Toy    serialization: 2744 nanoseconds, size = 250, throughtput ~= 728862 packets/s
+19.08.13 20:13:07,885 DEBUG [main]: SerialTest      - Manual serialization: 963 nanoseconds, size = 192, throughtput ~= 2076843 packets/s
+19.08.13 20:13:07,885 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 22:06:17,224 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 22:07:26,752 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 22:07:40,549 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 22:07:40,549 DEBUG [main]: SerialTest      - Java   serialization: 10052 nanoseconds, size = 326, throughtput ~= 198965 packets/s
+19.08.13 22:07:40,549 DEBUG [main]: SerialTest      - Toy    serialization: 2825 nanoseconds, size = 250, throughtput ~= 707964 packets/s
+19.08.13 22:07:40,550 DEBUG [main]: SerialTest      - Manual serialization: 973 nanoseconds, size = 192, throughtput ~= 2055498 packets/s
+19.08.13 22:07:40,550 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 22:12:16,881 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 22:13:26,413 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 22:13:40,126 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 22:13:40,127 DEBUG [main]: SerialTest      - Java   serialization: 9944 nanoseconds, size = 326, throughtput ~= 201126 packets/s
+19.08.13 22:13:40,127 DEBUG [main]: SerialTest      - Toy    serialization: 2929 nanoseconds, size = 250, throughtput ~= 682826 packets/s
+19.08.13 22:13:40,127 DEBUG [main]: SerialTest      - Manual serialization: 962 nanoseconds, size = 192, throughtput ~= 2079002 packets/s
+19.08.13 22:13:40,127 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 22:13:50,493 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 22:14:59,057 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 22:15:12,526 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 22:15:12,527 DEBUG [main]: SerialTest      - Java   serialization: 9664 nanoseconds, size = 326, throughtput ~= 206953 packets/s
+19.08.13 22:15:12,527 DEBUG [main]: SerialTest      - Toy    serialization: 2864 nanoseconds, size = 250, throughtput ~= 698324 packets/s
+19.08.13 22:15:12,527 DEBUG [main]: SerialTest      - Manual serialization: 956 nanoseconds, size = 192, throughtput ~= 2092050 packets/s
+19.08.13 22:15:12,527 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 22:15:31,085 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 22:16:38,354 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 22:16:51,567 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 22:16:51,568 DEBUG [main]: SerialTest      - Java   serialization: 9363 nanoseconds, size = 326, throughtput ~= 213606 packets/s
+19.08.13 22:16:51,568 DEBUG [main]: SerialTest      - Toy    serialization: 2794 nanoseconds, size = 250, throughtput ~= 715819 packets/s
+19.08.13 22:16:51,568 DEBUG [main]: SerialTest      - Manual serialization: 979 nanoseconds, size = 192, throughtput ~= 2042900 packets/s
+19.08.13 22:16:51,568 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 22:20:44,055 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 22:21:51,546 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 22:22:04,844 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 22:22:04,844 DEBUG [main]: SerialTest      - Java   serialization: 9529 nanoseconds, size = 326, throughtput ~= 209885 packets/s
+19.08.13 22:22:04,845 DEBUG [main]: SerialTest      - Toy    serialization: 2782 nanoseconds, size = 250, throughtput ~= 718907 packets/s
+19.08.13 22:22:04,845 DEBUG [main]: SerialTest      - Manual serialization: 973 nanoseconds, size = 192, throughtput ~= 2055498 packets/s
+19.08.13 22:22:04,845 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+19.08.13 22:46:47,539 DEBUG [main]: SerialTest      - Warming up...
+19.08.13 22:47:56,116 DEBUG [main]: SerialTest      - Running tests...
+19.08.13 22:48:09,631 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+19.08.13 22:48:09,632 DEBUG [main]: SerialTest      - Java   serialization: 9786 nanoseconds, size = 326, throughtput ~= 204373 packets/s
+19.08.13 22:48:09,632 DEBUG [main]: SerialTest      - Toy    serialization: 2834 nanoseconds, size = 250, throughtput ~= 705716 packets/s
+19.08.13 22:48:09,632 DEBUG [main]: SerialTest      - Manual serialization: 976 nanoseconds, size = 192, throughtput ~= 2049180 packets/s
+19.08.13 22:48:09,632 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359

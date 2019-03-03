@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration>
+	<!-- Вывод в файл -->
+	<appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="log/TWAServer.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd.MM.yy HH:mm:ss,SSS} %-5p [%t]: %-15c{1} - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Вывод в консоль -->
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd.MM.yy HH:mm:ss,SSS} %-5p [%t]: %-15c{1} - %m%n" />
+		</layout>
+	</appender>
+
+	<category name="net.twagame">
+		<priority value="DEBUG" />
+	</category>
+
+	<category name="org.hibernate">
+		<priority value="INFO" />
+	</category>
+
+	<!-- Показывать SQL запросы -->
+	<category name="org.hibernate.SQL">
+		<priority value="ALL" />
+	</category>
+
+	<!-- Показывать параметры SQL запроса -->
+	<!-- <category name="org.hibernate.type"> -->
+	<!-- <priority value="TRACE"/> -->
+	<!-- </category> -->
+
+	<!-- Показывать лог работы с хибернейт-кэшем -->
+	<!-- <category name="net.sf.ehcache"> -->
+	<!-- <priority value="DEBUG" /> -->
+	<!-- </category> -->
+
+	<root>
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+	</root>
+</log4j:configuration>

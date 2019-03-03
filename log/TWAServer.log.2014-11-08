@@ -1,0 +1,1243 @@
+08.11.14 04:30:53,310 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:30:53,511 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:30:53,516 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:30:53,518 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:30:53,519 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:30:53,567 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:30:53,567 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:30:53,638 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:30:53,678 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:30:53,680 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:30:53,681 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:30:53,681 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:30:53,681 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:30:53,741 WARN  [main]: JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+08.11.14 04:30:53,746 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:30:53,754 INFO  [main]: LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+08.11.14 04:30:53,868 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:30:53,873 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:30:54,172 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:30:54,175 ERROR [main]: SchemaExport    - HHH000231: Schema export unsuccessful
+java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:367)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:500)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:35)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+08.11.14 04:30:54,178 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 04:30:54,214 INFO  [main]: HibernateTest   - Creating items and characters
+08.11.14 04:30:54,214 INFO  [main]: HibernateTest   - Adding items to characters
+08.11.14 04:30:54,214 INFO  [main]: HibernateTest   - Saving items and characters to the database
+08.11.14 04:30:54,219 WARN  [main]: SqlExceptionHelper - SQL Error: -1, SQLState: HY0000
+08.11.14 04:30:54,219 ERROR [main]: SqlExceptionHelper - Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+08.11.14 04:30:54,220 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:160)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1426)
+	at net.twagame.sandbox.hibernate.HibernateTest.save(HibernateTest.java:120)
+	at net.twagame.sandbox.hibernate.HibernateTest.execute(HibernateTest.java:56)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:292)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 7 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+08.11.14 04:31:23,026 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:31:23,117 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:31:23,121 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:31:23,123 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:31:23,124 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:31:23,143 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:31:23,143 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:31:23,183 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:31:23,213 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:31:23,216 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:31:23,216 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:31:23,216 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:31:23,216 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:31:23,267 WARN  [main]: JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+08.11.14 04:31:23,272 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:31:23,278 INFO  [main]: LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+08.11.14 04:31:23,386 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:31:23,388 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:31:23,623 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:31:23,627 ERROR [main]: SchemaExport    - HHH000231: Schema export unsuccessful
+java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:367)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:500)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:35)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+08.11.14 04:31:23,629 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 04:31:23,661 INFO  [main]: HibernateTest   - Creating items and characters
+08.11.14 04:31:23,661 INFO  [main]: HibernateTest   - Adding items to characters
+08.11.14 04:31:23,661 INFO  [main]: HibernateTest   - Saving items and characters to the database
+08.11.14 04:31:23,666 WARN  [main]: SqlExceptionHelper - SQL Error: -1, SQLState: HY0000
+08.11.14 04:31:23,666 ERROR [main]: SqlExceptionHelper - Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+08.11.14 04:31:23,667 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:160)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1426)
+	at net.twagame.sandbox.hibernate.HibernateTest.save(HibernateTest.java:120)
+	at net.twagame.sandbox.hibernate.HibernateTest.execute(HibernateTest.java:56)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:292)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 7 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' (using password: YES)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+08.11.14 04:32:46,689 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:32:46,778 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:32:46,782 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:32:46,784 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:32:46,786 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:32:46,805 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:32:46,805 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:32:46,845 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:32:46,876 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:32:46,879 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:32:46,879 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:32:46,879 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:32:46,880 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:32:46,932 WARN  [main]: JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Could not connect: Access denied for user 'twaserver'@'10.0.2.2' to database 'twaserver'
+08.11.14 04:32:46,938 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:32:46,943 INFO  [main]: LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+08.11.14 04:32:47,051 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:32:47,055 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:32:47,291 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:32:47,295 ERROR [main]: SchemaExport    - HHH000231: Schema export unsuccessful
+java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' to database 'twaserver'
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:367)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:500)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:35)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' to database 'twaserver'
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+08.11.14 04:32:47,297 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 04:32:47,330 INFO  [main]: HibernateTest   - Creating items and characters
+08.11.14 04:32:47,330 INFO  [main]: HibernateTest   - Adding items to characters
+08.11.14 04:32:47,330 INFO  [main]: HibernateTest   - Saving items and characters to the database
+08.11.14 04:32:47,334 WARN  [main]: SqlExceptionHelper - SQL Error: -1, SQLState: HY0000
+08.11.14 04:32:47,335 ERROR [main]: SqlExceptionHelper - Could not connect: Access denied for user 'twaserver'@'10.0.2.2' to database 'twaserver'
+08.11.14 04:32:47,335 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:160)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1426)
+	at net.twagame.sandbox.hibernate.HibernateTest.save(HibernateTest.java:120)
+	at net.twagame.sandbox.hibernate.HibernateTest.execute(HibernateTest.java:56)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' to database 'twaserver'
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:292)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 7 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'10.0.2.2' to database 'twaserver'
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+08.11.14 04:33:19,510 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:33:19,600 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:33:19,604 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:33:19,606 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:33:19,607 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:33:19,626 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:33:19,626 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:33:19,665 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:33:19,695 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:33:19,698 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:33:19,698 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:33:19,698 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:33:19,699 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:33:19,787 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:33:19,900 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:33:19,904 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:33:20,135 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:33:20,137 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:33:20,140 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:33:20,140 ERROR [main]: SchemaExport    - Table 'twaserver.GameCharacter_inventory' doesn't exist
+08.11.14 04:33:20,140 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:33:20,141 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:33:20,141 ERROR [main]: SchemaExport    - Table 'twaserver.GameCharacter_inventory' doesn't exist
+08.11.14 04:33:20,141 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 04:33:20,152 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+08.11.14 04:33:20,153 DEBUG [main]: SQL             - drop table if exists Item
+08.11.14 04:33:20,154 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 04:33:20,169 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+08.11.14 04:33:20,179 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 04:33:20,185 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+08.11.14 04:33:20,216 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+08.11.14 04:33:20,240 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 04:33:20,274 INFO  [main]: HibernateTest   - Creating items and characters
+08.11.14 04:33:20,275 INFO  [main]: HibernateTest   - Adding items to characters
+08.11.14 04:33:20,275 INFO  [main]: HibernateTest   - Saving items and characters to the database
+08.11.14 04:33:20,330 DEBUG [main]: SQL             - insert into Item (name) values (?)
+08.11.14 04:33:20,337 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 04:33:20,340 DEBUG [main]: SQL             - insert into Item (name) values (?)
+08.11.14 04:33:20,341 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 04:33:20,348 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+08.11.14 04:33:20,350 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 04:33:20,350 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+08.11.14 04:33:20,351 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 04:33:20,362 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+08.11.14 04:33:20,364 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+08.11.14 04:33:20,365 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+08.11.14 04:33:20,496 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+08.11.14 04:33:20,500 INFO  [main]: HibernateTest   - List of characters:
+08.11.14 04:33:20,500 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+08.11.14 04:33:20,500 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+08.11.14 04:33:20,500 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+08.11.14 04:33:20,506 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+08.11.14 04:33:20,508 INFO  [main]: HibernateTest   - Loaded 1 characters
+08.11.14 04:33:20,508 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+08.11.14 04:33:20,508 INFO  [main]: HibernateTest   - Saving changes to the database
+08.11.14 04:33:20,509 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+08.11.14 04:33:20,513 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+08.11.14 04:33:20,514 INFO  [main]: HibernateTest   - List of characters:
+08.11.14 04:33:20,514 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+08.11.14 04:33:20,514 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еще еда=1, Еда=8}
+08.11.14 04:33:20,516 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+08.11.14 04:33:20,518 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+08.11.14 04:33:20,519 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+08.11.14 04:33:20,522 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+08.11.14 04:33:20,523 INFO  [main]: HibernateTest   - List of characters:
+08.11.14 04:33:20,523 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+08.11.14 04:33:20,525 DEBUG [main]: HibernateTest   - Finished in 251 milliseconds
+08.11.14 04:36:13,813 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:36:13,896 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:36:13,900 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:36:13,902 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:36:13,903 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:36:13,920 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:36:13,921 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:36:13,958 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:36:13,987 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:36:13,990 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:36:13,990 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:36:13,991 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:36:13,991 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:36:14,067 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:36:14,185 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:36:14,189 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:36:14,433 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:36:14,435 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:36:14,437 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:36:14,445 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 04:36:46,948 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:36:47,094 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:36:47,098 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:36:47,099 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:36:47,101 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:36:47,124 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:36:47,124 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:36:47,166 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:36:47,199 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:36:47,202 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:36:47,202 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:36:47,203 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:36:47,203 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:36:47,281 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:36:47,403 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:36:47,407 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:36:47,662 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:36:47,664 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:36:47,668 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:36:47,668 ERROR [main]: SchemaExport    - Can't DROP 'FK_c4fan8otajeh70ipbb54kamjg'; check that column/key exists
+08.11.14 04:36:47,668 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:36:47,669 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:36:47,669 ERROR [main]: SchemaExport    - Can't DROP 'FK_ced33vs6jum7myjr2918n0k17'; check that column/key exists
+08.11.14 04:36:47,669 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 04:37:08,757 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:37:08,844 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:37:08,849 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:37:08,850 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:37:08,852 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:37:08,876 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:37:08,876 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:37:08,916 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:37:08,946 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:37:08,949 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:37:08,949 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:37:08,950 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:37:08,950 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:37:09,032 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:37:09,147 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:37:09,151 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:37:09,384 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:37:09,386 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:37:09,389 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+08.11.14 04:37:09,389 ERROR [main]: SchemaExport    - Can't DROP 'FK_c4fan8otajeh70ipbb54kamjg'; check that column/key exists
+08.11.14 04:37:09,389 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:37:09,390 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+08.11.14 04:37:09,390 ERROR [main]: SchemaExport    - Can't DROP 'FK_ced33vs6jum7myjr2918n0k17'; check that column/key exists
+08.11.14 04:37:09,390 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 04:49:05,394 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:49:05,478 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:49:05,483 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:49:05,485 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:49:05,487 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:49:05,505 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:49:05,505 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:49:05,544 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:49:05,575 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:49:05,578 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:49:05,579 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:49:05,579 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:49:05,579 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:49:05,657 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:49:05,745 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.MappingException: Could not determine type for: net.twagame.sandbox.hibernate.Pet, at table: GameCharacter, for columns: [org.hibernate.mapping.Column(pet)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:314)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:292)
+	at org.hibernate.mapping.Property.isValid(Property.java:239)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:469)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:270)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1324)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1782)
+	at net.twagame.sandbox.hibernate.CriteriaTest.<init>(CriteriaTest.java:21)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:28)
+08.11.14 04:50:10,121 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:50:10,208 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:50:10,213 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:50:10,215 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:50:10,216 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:50:10,234 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:50:10,234 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:50:10,271 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:50:10,303 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:50:10,305 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:50:10,305 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:50:10,305 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:50:10,306 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:50:10,380 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:50:10,466 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.MappingException: Could not determine type for: net.twagame.sandbox.hibernate.Pet, at table: GameCharacter, for columns: [org.hibernate.mapping.Column(pet)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:314)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:292)
+	at org.hibernate.mapping.Property.isValid(Property.java:239)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:469)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:270)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1324)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1782)
+	at net.twagame.sandbox.hibernate.CriteriaTest.<init>(CriteriaTest.java:21)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:28)
+08.11.14 04:51:37,162 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:51:37,245 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:51:37,249 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:51:37,251 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:51:37,252 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:51:37,269 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:51:37,270 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:51:37,307 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:51:37,334 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:51:37,338 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:51:37,338 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:51:37,338 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:51:37,338 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:51:37,413 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:51:37,510 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:51:37,514 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:51:37,739 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:51:37,742 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 04:51:37,746 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 04:51:37,746 ERROR [main]: SchemaExport    - Table 'twaserver.GameCharacter' doesn't exist
+08.11.14 04:51:37,746 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 04:51:37,747 DEBUG [main]: SQL             - drop table if exists Item
+08.11.14 04:51:37,749 DEBUG [main]: SQL             - drop table if exists Pet
+08.11.14 04:51:37,750 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), pet_id bigint, primary key (id)) ENGINE=InnoDB
+08.11.14 04:51:37,760 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 04:51:37,774 DEBUG [main]: SQL             - create table Pet (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 04:51:37,783 DEBUG [main]: SQL             - alter table GameCharacter add index FK_kl2k1bdjwj15cbthqoeoo6ibq (pet_id), add constraint FK_kl2k1bdjwj15cbthqoeoo6ibq foreign key (pet_id) references Pet (id)
+08.11.14 04:51:37,808 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 04:51:37,883 DEBUG [main]: SQL             - insert into GameCharacter (name, pet_id) values (?, ?)
+08.11.14 04:51:37,892 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 04:51:37,897 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: net.twagame.sandbox.hibernate.Pet
+	at org.hibernate.engine.internal.ForeignKeys.getEntityIdentifierIfNotUnsaved(ForeignKeys.java:249)
+	at org.hibernate.type.EntityType.getIdentifier(EntityType.java:510)
+	at org.hibernate.type.ManyToOneType.isDirty(ManyToOneType.java:309)
+	at org.hibernate.type.ManyToOneType.isDirty(ManyToOneType.java:319)
+	at org.hibernate.type.TypeHelper.findDirty(TypeHelper.java:294)
+	at org.hibernate.persister.entity.AbstractEntityPersister.findDirty(AbstractEntityPersister.java:4037)
+	at org.hibernate.event.internal.DefaultFlushEntityEventListener.dirtyCheck(DefaultFlushEntityEventListener.java:527)
+	at org.hibernate.event.internal.DefaultFlushEntityEventListener.isUpdateNecessary(DefaultFlushEntityEventListener.java:234)
+	at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:163)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:228)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:100)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1234)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:404)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
+	at net.twagame.sandbox.hibernate.CriteriaTest.save(CriteriaTest.java:43)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:53)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:28)
+08.11.14 04:52:02,328 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:52:02,410 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:52:02,415 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:52:02,416 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:52:02,418 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:52:02,435 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:52:02,435 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:52:02,475 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:52:02,504 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:52:02,506 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:52:02,507 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:52:02,507 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:52:02,507 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:52:02,580 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:52:02,676 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:52:02,680 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:52:02,903 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:52:02,906 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 04:53:55,149 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 04:53:55,233 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 04:53:55,238 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 04:53:55,239 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 04:53:55,241 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 04:53:55,258 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 04:53:55,258 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 04:53:55,295 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 04:53:55,326 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 04:53:55,329 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 04:53:55,329 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 04:53:55,329 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 04:53:55,330 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 04:53:55,402 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 04:53:55,498 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 04:53:55,502 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 04:53:55,724 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 04:53:55,728 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 04:53:55,731 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 04:53:55,731 ERROR [main]: SchemaExport    - Table 'twaserver.GameCharacter' doesn't exist
+08.11.14 04:53:55,731 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 04:53:55,733 DEBUG [main]: SQL             - drop table if exists Pet
+08.11.14 04:53:55,734 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), pet_id bigint, primary key (id)) ENGINE=InnoDB
+08.11.14 04:53:55,743 DEBUG [main]: SQL             - create table Pet (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 04:53:55,759 DEBUG [main]: SQL             - alter table GameCharacter add index FK_kl2k1bdjwj15cbthqoeoo6ibq (pet_id), add constraint FK_kl2k1bdjwj15cbthqoeoo6ibq foreign key (pet_id) references Pet (id)
+08.11.14 04:53:55,778 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 04:53:55,847 DEBUG [main]: SQL             - insert into Pet (name) values (?)
+08.11.14 04:53:55,862 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 04:53:55,865 DEBUG [main]: SQL             - insert into GameCharacter (name, pet_id) values (?, ?)
+08.11.14 04:53:55,867 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+08.11.14 05:19:30,846 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:19:30,930 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:19:30,935 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:19:30,937 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:19:30,939 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:19:30,957 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:19:30,958 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:19:30,995 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:19:31,023 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:19:31,025 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:19:31,026 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:19:31,026 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:19:31,026 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:19:31,101 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:19:31,196 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:19:31,200 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:19:31,467 DEBUG [main]: SQL             - select this_.id as id1_0_1_, this_.name as name2_0_1_, this_.pet_id as pet_id3_0_1_, pet1_.id as id1_1_0_, pet1_.name as name2_1_0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where pet1_.name like ?
+08.11.14 05:19:57,286 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:19:57,393 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:19:57,399 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:19:57,402 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:19:57,404 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:19:57,430 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:19:57,431 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:19:57,479 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:19:57,522 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:19:57,526 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:19:57,526 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:19:57,526 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:19:57,527 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:19:57,615 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:19:57,742 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:19:57,748 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:19:58,101 DEBUG [main]: SQL             - select this_.id as id1_0_1_, this_.name as name2_0_1_, this_.pet_id as pet_id3_0_1_, pet1_.id as id1_1_0_, pet1_.name as name2_1_0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where pet1_.name like ?
+08.11.14 05:25:24,754 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:25:24,860 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:25:24,866 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:25:24,868 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:25:24,870 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:25:24,895 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:25:24,896 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:25:24,943 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:25:24,985 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:25:24,987 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:25:24,987 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:25:24,987 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:25:24,987 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:25:25,078 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:25:25,205 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:25:25,211 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:25:25,555 DEBUG [main]: SQL             - select this_.id as id1_0_1_, this_.name as name2_0_1_, this_.pet_id as pet_id3_0_1_, pet1_.id as id1_1_0_, pet1_.name as name2_1_0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where pet1_.name like ?
+08.11.14 05:26:13,619 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:26:13,699 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:26:13,704 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:26:13,705 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:26:13,707 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:26:13,725 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:26:13,725 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:26:13,762 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:26:13,790 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:26:13,793 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:26:13,793 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:26:13,793 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:26:13,794 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:26:13,868 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:26:13,961 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:26:13,965 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:26:14,228 DEBUG [main]: SQL             - select this_.id as id1_0_1_, this_.name as name2_0_1_, this_.pet_id as pet_id3_0_1_, pet1_.id as id1_1_0_, pet1_.name as name2_1_0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where pet1_.name like ?
+08.11.14 05:26:14,272 ERROR [main]: CriteriaTest    - Exception running test: 
+java.lang.ClassCastException: net.twagame.sandbox.hibernate.GameCharacter cannot be cast to net.twagame.sandbox.hibernate.Pet
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:44)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:31)
+08.11.14 05:30:40,783 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:30:40,868 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:30:40,872 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:30:40,875 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:30:40,876 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:30:40,893 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:30:40,893 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:30:40,930 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:30:40,961 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:30:40,962 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:30:40,963 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:30:40,963 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:30:40,963 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:30:41,037 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:30:41,134 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:30:41,137 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:30:41,408 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where pet1_.name like ?
+08.11.14 05:30:41,446 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.name as name2_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:30:46,932 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:30:47,042 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:30:47,048 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:30:47,050 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:30:47,052 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:30:47,075 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:30:47,075 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:30:47,122 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:30:47,163 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:30:47,165 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:30:47,166 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:30:47,166 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:30:47,166 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:30:47,259 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:30:47,386 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:30:47,390 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:30:47,730 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where pet1_.name like ?
+08.11.14 05:30:47,785 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.name as name2_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:37:11,997 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:37:12,106 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:37:12,112 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:37:12,115 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:37:12,116 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:37:12,140 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:37:12,140 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:37:12,187 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:37:12,229 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:37:12,232 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:37:12,232 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:37:12,232 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:37:12,233 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:37:12,329 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:37:12,469 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:37:12,475 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:37:12,847 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:37:12,908 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.name as name2_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:38:38,681 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:38:38,772 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:38:38,777 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:38:38,779 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:38:38,780 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:38:38,798 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:38:38,799 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:38:38,839 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:38:38,869 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:38:38,873 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:38:38,873 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:38:38,874 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:38:38,874 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:38:38,951 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:38:39,049 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:38:39,053 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:38:39,319 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:38:39,355 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.name as name2_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:38:44,370 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:38:44,485 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:38:44,491 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:38:44,493 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:38:44,495 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:38:44,518 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:38:44,518 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:38:44,565 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:38:44,606 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:38:44,609 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:38:44,609 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:38:44,609 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:38:44,609 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:38:44,697 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:38:44,829 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:38:44,835 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:38:45,189 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:38:45,246 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.name as name2_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:45:29,397 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:45:29,480 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:45:29,484 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:45:29,486 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:45:29,487 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:45:29,504 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:45:29,505 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:45:29,542 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:45:29,571 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:45:29,573 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:45:29,573 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:45:29,574 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:45:29,574 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:45:29,652 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:45:29,743 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:45:29,747 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:45:29,969 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 05:45:29,971 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 05:46:19,968 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:46:20,061 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:46:20,066 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:46:20,068 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:46:20,068 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:46:20,087 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:46:20,087 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:46:20,130 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:46:20,161 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:46:20,164 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:46:20,164 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:46:20,164 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:46:20,164 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:46:20,242 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:46:20,339 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:46:20,343 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:46:20,572 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 05:46:20,574 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 05:46:20,577 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 05:46:20,578 ERROR [main]: SchemaExport    - Table 'twaserver.GameCharacter' doesn't exist
+08.11.14 05:46:20,578 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 05:46:20,579 DEBUG [main]: SQL             - drop table if exists Pet
+08.11.14 05:46:20,580 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), pet_id bigint, primary key (id)) ENGINE=InnoDB
+08.11.14 05:46:20,590 DEBUG [main]: SQL             - create table Pet (id bigint not null auto_increment, level integer not null, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 05:46:20,608 DEBUG [main]: SQL             - alter table GameCharacter add index FK_kl2k1bdjwj15cbthqoeoo6ibq (pet_id), add constraint FK_kl2k1bdjwj15cbthqoeoo6ibq foreign key (pet_id) references Pet (id)
+08.11.14 05:46:20,639 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 05:46:20,687 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:46:20,695 ERROR [main]: CriteriaTest    - Exception running test: 
+java.util.NoSuchElementException
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:50)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 05:50:20,957 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:50:21,049 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:50:21,054 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:50:21,056 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:50:21,057 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:50:21,079 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:50:21,079 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:50:21,118 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:50:21,147 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:50:21,150 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:50:21,150 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:50:21,150 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:50:21,151 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:50:21,225 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:50:21,318 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:50:21,322 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:50:21,548 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 05:50:21,550 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 05:50:21,553 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 05:50:21,553 ERROR [main]: SchemaExport    - Table 'twaserver.GameCharacter' doesn't exist
+08.11.14 05:50:21,553 DEBUG [main]: SQL             - drop table if exists GameCharacter
+08.11.14 05:50:21,554 DEBUG [main]: SQL             - drop table if exists Pet
+08.11.14 05:50:21,557 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), pet_id bigint, primary key (id)) ENGINE=InnoDB
+08.11.14 05:50:21,566 DEBUG [main]: SQL             - create table Pet (id bigint not null auto_increment, level integer not null, name varchar(255), primary key (id)) ENGINE=InnoDB
+08.11.14 05:50:21,573 DEBUG [main]: SQL             - alter table GameCharacter add index FK_kl2k1bdjwj15cbthqoeoo6ibq (pet_id), add constraint FK_kl2k1bdjwj15cbthqoeoo6ibq foreign key (pet_id) references Pet (id)
+08.11.14 05:50:21,597 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+08.11.14 05:50:21,646 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:50:21,654 ERROR [main]: CriteriaTest    - Exception running test: 
+java.util.NoSuchElementException
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:50)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 05:54:38,752 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:54:38,863 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:54:38,870 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:54:38,872 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:54:38,874 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:54:38,898 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:54:38,898 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:54:38,947 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:54:38,988 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:54:38,990 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:54:38,991 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:54:38,991 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:54:38,991 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:54:39,080 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:54:39,209 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:54:39,213 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:54:39,498 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+08.11.14 05:54:39,500 DEBUG [main]: SQL             - alter table GameCharacter drop foreign key FK_kl2k1bdjwj15cbthqoeoo6ibq
+08.11.14 05:55:42,998 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:55:43,089 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:55:43,094 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:55:43,096 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:55:43,098 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:55:43,116 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:55:43,116 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:55:43,157 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:55:43,188 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:55:43,191 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:55:43,191 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:55:43,191 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:55:43,191 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:55:43,272 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:55:43,374 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:55:43,377 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:55:43,652 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:55:43,694 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:55:43,705 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:55:50,718 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:55:50,827 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:55:50,834 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:55:50,836 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:55:50,837 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:55:50,862 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:55:50,862 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:55:50,908 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:55:50,948 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:55:50,951 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:55:50,952 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:55:50,952 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:55:50,952 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:55:51,040 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:55:51,167 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:55:51,172 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:55:51,515 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 05:55:51,571 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:55:51,583 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 05:57:22,845 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:57:22,953 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:57:22,959 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:57:22,962 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:57:22,963 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:57:22,988 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:57:22,988 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:57:23,036 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:57:23,076 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:57:23,078 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:57:23,079 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:57:23,079 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:57:23,079 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:57:23,167 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:57:23,295 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:57:23,300 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:57:23,638 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.QueryException: could not resolve property: level of: net.twagame.sandbox.hibernate.GameCharacter
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1985)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1960)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.findColumns(CriteriaQueryTranslator.java:538)
+	at org.hibernate.criterion.SimpleExpression.toSqlString(SimpleExpression.java:66)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getWhereCondition(CriteriaQueryTranslator.java:419)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:110)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:95)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1643)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:50)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 05:58:35,003 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 05:58:35,111 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 05:58:35,118 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 05:58:35,120 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 05:58:35,123 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 05:58:35,147 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 05:58:35,147 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 05:58:35,195 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 05:58:35,234 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 05:58:35,237 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 05:58:35,237 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 05:58:35,238 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 05:58:35,238 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 05:58:35,329 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 05:58:35,456 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 05:58:35,461 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 05:58:35,793 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.QueryException: could not resolve property: pet of: net.twagame.sandbox.hibernate.Pet
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1985)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1960)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.criterion.PropertyProjection.toSqlString(PropertyProjection.java:65)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getSelect(CriteriaQueryTranslator.java:388)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:110)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:95)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1643)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at org.hibernate.internal.CriteriaImpl$Subcriteria.list(CriteriaImpl.java:613)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:50)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 06:01:42,330 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:01:42,434 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:01:42,440 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:01:42,443 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:01:42,444 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:01:42,468 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:01:42,468 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:01:42,515 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:01:42,557 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:01:42,560 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:01:42,560 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:01:42,561 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:01:42,561 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:01:42,652 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:01:42,781 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:01:42,787 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:01:43,135 DEBUG [main]: SQL             - select this_.id as id1_0_1_, this_.name as name2_0_1_, this_.pet_id as pet_id3_0_1_, pet1_.id as id1_1_0_, pet1_.level as level2_1_0_, pet1_.name as name3_1_0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:03:09,729 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:03:09,833 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:03:09,840 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:03:09,841 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:03:09,843 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:03:09,866 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:03:09,866 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:03:09,913 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:03:09,954 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:03:09,957 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:03:09,957 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:03:09,957 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:03:09,957 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:03:10,046 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:03:10,172 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:03:10,178 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:03:10,517 DEBUG [main]: SQL             - select this_.id as id1_0_1_, this_.name as name2_0_1_, this_.pet_id as pet_id3_0_1_, pet1_.id as id1_1_0_, pet1_.level as level2_1_0_, pet1_.name as name3_1_0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:03:10,536 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.PropertyNotFoundException: Could not find setter for pet on class net.twagame.sandbox.hibernate.PetRow
+	at org.hibernate.property.ChainedPropertyAccessor.getSetter(ChainedPropertyAccessor.java:66)
+	at org.hibernate.transform.AliasToBeanResultTransformer.initialize(AliasToBeanResultTransformer.java:122)
+	at org.hibernate.transform.AliasToBeanResultTransformer.transformTuple(AliasToBeanResultTransformer.java:85)
+	at org.hibernate.loader.criteria.CriteriaLoader.getResultColumnOrRow(CriteriaLoader.java:146)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:741)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342)
+	at org.hibernate.loader.Loader.doList(Loader.java:2526)
+	at org.hibernate.loader.Loader.doList(Loader.java:2512)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342)
+	at org.hibernate.loader.Loader.list(Loader.java:2337)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:124)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1662)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:50)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 06:04:31,180 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:04:31,289 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:04:31,295 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:04:31,298 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:04:31,299 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:04:31,322 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:04:31,322 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:04:31,369 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:04:31,410 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:04:31,412 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:04:31,413 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:04:31,413 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:04:31,413 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:04:31,503 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:04:31,631 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:04:31,636 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:04:31,983 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:04:32,039 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 06:04:58,986 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:04:59,096 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:04:59,102 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:04:59,105 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:04:59,106 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:04:59,131 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:04:59,131 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:04:59,178 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:04:59,218 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:04:59,221 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:04:59,221 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:04:59,221 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:04:59,221 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:04:59,310 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:04:59,438 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:04:59,443 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:04:59,782 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:04:59,837 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 06:06:10,827 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:06:10,938 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:06:10,944 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:06:10,946 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:06:10,948 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:06:10,972 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:06:10,972 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:06:11,019 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:06:11,060 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:06:11,063 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:06:11,064 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:06:11,064 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:06:11,064 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:06:11,151 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:06:11,282 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:06:11,288 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:06:11,638 DEBUG [main]: SQL             - select this_.pet_id as y0_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:06:11,694 DEBUG [main]: SQL             - select pet0_.id as id1_1_0_, pet0_.level as level2_1_0_, pet0_.name as name3_1_0_ from Pet pet0_ where pet0_.id=?
+08.11.14 06:09:46,995 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:09:47,101 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:09:47,108 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:09:47,110 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:09:47,112 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:09:47,134 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:09:47,134 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:09:47,181 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:09:47,223 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:09:47,226 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:09:47,226 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:09:47,227 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:09:47,227 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:09:47,317 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:09:47,444 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:09:47,450 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:09:47,788 DEBUG [main]: SQL             - select this_.id as id1_1_0_, this_.level as level2_1_0_, this_.name as name3_1_0_ from Pet this_ where this_.level>?
+08.11.14 06:09:47,806 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.PropertyNotFoundException: Could not find setter for pet on class net.twagame.sandbox.hibernate.PetRow
+	at org.hibernate.property.ChainedPropertyAccessor.getSetter(ChainedPropertyAccessor.java:66)
+	at org.hibernate.transform.AliasToBeanResultTransformer.initialize(AliasToBeanResultTransformer.java:122)
+	at org.hibernate.transform.AliasToBeanResultTransformer.transformTuple(AliasToBeanResultTransformer.java:85)
+	at org.hibernate.loader.criteria.CriteriaLoader.getResultColumnOrRow(CriteriaLoader.java:146)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:741)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342)
+	at org.hibernate.loader.Loader.doList(Loader.java:2526)
+	at org.hibernate.loader.Loader.doList(Loader.java:2512)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342)
+	at org.hibernate.loader.Loader.list(Loader.java:2337)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:124)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1662)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:53)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 06:10:42,961 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:10:43,045 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:10:43,049 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:10:43,051 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:10:43,052 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:10:43,071 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:10:43,071 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:10:43,109 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:10:43,138 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:10:43,141 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:10:43,141 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:10:43,141 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:10:43,142 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:10:43,214 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:10:43,307 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:10:43,311 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:10:43,570 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.QueryException: could not resolve property: pet of: net.twagame.sandbox.hibernate.Pet
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1985)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1960)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.findColumns(CriteriaQueryTranslator.java:538)
+	at org.hibernate.criterion.SimpleExpression.toSqlString(SimpleExpression.java:66)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getWhereCondition(CriteriaQueryTranslator.java:419)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:123)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:95)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1643)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:53)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 06:10:54,515 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:10:54,594 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:10:54,599 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:10:54,600 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:10:54,602 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:10:54,618 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:10:54,618 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:10:54,656 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:10:54,685 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:10:54,688 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:10:54,688 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:10:54,689 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:10:54,689 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:10:54,764 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:10:54,857 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:10:54,861 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:10:55,125 DEBUG [main]: SQL             - select this_.id as id1_1_0_, this_.level as level2_1_0_, this_.name as name3_1_0_ from Pet this_ where this_.level>?
+08.11.14 06:10:55,138 ERROR [main]: CriteriaTest    - Exception running test: 
+org.hibernate.PropertyNotFoundException: Could not find setter for this on class net.twagame.sandbox.hibernate.PetRow
+	at org.hibernate.property.ChainedPropertyAccessor.getSetter(ChainedPropertyAccessor.java:66)
+	at org.hibernate.transform.AliasToBeanResultTransformer.initialize(AliasToBeanResultTransformer.java:122)
+	at org.hibernate.transform.AliasToBeanResultTransformer.transformTuple(AliasToBeanResultTransformer.java:85)
+	at org.hibernate.loader.criteria.CriteriaLoader.getResultColumnOrRow(CriteriaLoader.java:146)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:741)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342)
+	at org.hibernate.loader.Loader.doList(Loader.java:2526)
+	at org.hibernate.loader.Loader.doList(Loader.java:2512)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342)
+	at org.hibernate.loader.Loader.list(Loader.java:2337)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:124)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1662)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at net.twagame.sandbox.hibernate.CriteriaTest.execute(CriteriaTest.java:53)
+	at net.twagame.sandbox.hibernate.CriteriaTest.main(CriteriaTest.java:33)
+08.11.14 06:16:39,493 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:16:39,612 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:16:39,619 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:16:39,621 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:16:39,623 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:16:39,646 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:16:39,646 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:16:39,697 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:16:39,743 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:16:39,746 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:16:39,746 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:16:39,747 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:16:39,747 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:16:39,841 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:16:39,973 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:16:39,979 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:16:40,328 DEBUG [main]: SQL             - select this_.level as y0_, this_.name as y1_ from Pet this_ where this_.level>?
+08.11.14 06:17:24,192 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:17:24,301 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:17:24,307 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:17:24,308 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:17:24,310 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:17:24,334 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:17:24,335 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:17:24,382 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:17:24,425 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:17:24,428 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:17:24,429 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:17:24,429 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:17:24,429 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:17:24,523 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:17:24,651 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:17:24,656 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:17:25,004 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ?
+08.11.14 06:17:53,287 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:17:53,376 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:17:53,381 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:17:53,383 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:17:53,384 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:17:53,402 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:17:53,402 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:17:53,440 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:17:53,470 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:17:53,473 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:17:53,473 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:17:53,473 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:17:53,473 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:17:53,547 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:17:53,641 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:17:53,644 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:17:53,912 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:17:56,326 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:17:56,440 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:17:56,447 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:17:56,450 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:17:56,452 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:17:56,475 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:17:56,475 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:17:56,524 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:17:56,563 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:17:56,567 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:17:56,567 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:17:56,567 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:17:56,568 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:17:56,657 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:17:56,787 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:17:56,792 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:17:57,142 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 06:22:21,356 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 06:22:21,465 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 06:22:21,471 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 06:22:21,473 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 06:22:21,475 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 06:22:21,498 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 06:22:21,498 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 06:22:21,546 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 06:22:21,587 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 06:22:21,590 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 06:22:21,590 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 06:22:21,590 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 06:22:21,591 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 06:22:21,683 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 06:22:21,816 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 06:22:21,821 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 06:22:22,171 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 09:57:37,776 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 09:57:37,899 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 09:57:37,906 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 09:57:37,909 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 09:57:37,911 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 09:57:37,937 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 09:57:37,938 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 09:57:37,991 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 09:57:38,035 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 09:57:38,038 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 09:57:38,038 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 09:57:38,038 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 09:57:38,039 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 09:57:38,132 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 09:57:38,261 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 09:57:38,266 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 09:57:38,636 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 09:57:50,836 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 09:57:50,931 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 09:57:50,936 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 09:57:50,938 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 09:57:50,941 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 09:57:50,960 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 09:57:50,960 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 09:57:51,000 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 09:57:51,029 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 09:57:51,032 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 09:57:51,032 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 09:57:51,032 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 09:57:51,032 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 09:57:51,106 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 09:57:51,206 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 09:57:51,210 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 09:57:51,491 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 09:58:30,203 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 09:58:30,289 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 09:58:30,294 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 09:58:30,296 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 09:58:30,298 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 09:58:30,316 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 09:58:30,316 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 09:58:30,355 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 09:58:30,385 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 09:58:30,387 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 09:58:30,388 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 09:58:30,388 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 09:58:30,388 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 09:58:30,465 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 09:58:30,563 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 09:58:30,567 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 09:58:30,844 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?
+08.11.14 10:49:26,993 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08.11.14 10:49:27,084 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08.11.14 10:49:27,088 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+08.11.14 10:49:27,091 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+08.11.14 10:49:27,092 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+08.11.14 10:49:27,110 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+08.11.14 10:49:27,110 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+08.11.14 10:49:27,150 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+08.11.14 10:49:27,182 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+08.11.14 10:49:27,184 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+08.11.14 10:49:27,184 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+08.11.14 10:49:27,185 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+08.11.14 10:49:27,185 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+08.11.14 10:49:27,260 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+08.11.14 10:49:27,356 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+08.11.14 10:49:27,359 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+08.11.14 10:49:27,636 DEBUG [main]: SQL             - select pet1_.level as y0_, pet1_.name as y1_ from GameCharacter this_ inner join Pet pet1_ on this_.pet_id=pet1_.id where this_.name like ? and pet1_.level>?

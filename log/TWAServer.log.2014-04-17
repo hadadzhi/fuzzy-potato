@@ -1,0 +1,303 @@
+17.04.14 17:30:00,788 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17.04.14 17:30:00,886 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+17.04.14 17:30:00,890 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+17.04.14 17:30:00,891 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+17.04.14 17:30:00,893 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+17.04.14 17:30:00,916 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17.04.14 17:30:00,916 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+17.04.14 17:30:01,010 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+17.04.14 17:30:01,078 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17.04.14 17:30:01,100 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+17.04.14 17:30:01,100 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+17.04.14 17:30:01,101 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+17.04.14 17:30:01,101 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+17.04.14 17:30:01,282 WARN  [main]: JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Could not connect: Access denied for user 'twaserver'@'localhost' (using password: YES)
+17.04.14 17:30:01,309 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+17.04.14 17:30:01,334 INFO  [main]: LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+17.04.14 17:30:01,387 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17.04.14 17:30:01,392 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17.04.14 17:30:01,512 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+17.04.14 17:30:01,514 ERROR [main]: SchemaExport    - HHH000231: Schema export unsuccessful
+java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'localhost' (using password: YES)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:367)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:500)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:35)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'localhost' (using password: YES)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+17.04.14 17:30:01,525 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+17.04.14 17:30:01,566 INFO  [main]: HibernateTest   - Creating items and characters
+17.04.14 17:30:01,577 INFO  [main]: HibernateTest   - Adding items to characters
+17.04.14 17:30:01,577 INFO  [main]: HibernateTest   - Saving items and characters to the database
+17.04.14 17:30:01,590 WARN  [main]: SqlExceptionHelper - SQL Error: -1, SQLState: HY0000
+17.04.14 17:30:01,590 ERROR [main]: SqlExceptionHelper - Could not connect: Access denied for user 'twaserver'@'localhost' (using password: YES)
+17.04.14 17:30:01,591 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:160)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1426)
+	at net.twagame.sandbox.hibernate.HibernateTest.save(HibernateTest.java:120)
+	at net.twagame.sandbox.hibernate.HibernateTest.execute(HibernateTest.java:56)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+Caused by: java.sql.SQLException: Could not connect: Access denied for user 'twaserver'@'localhost' (using password: YES)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:292)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 7 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect: Access denied for user 'twaserver'@'localhost' (using password: YES)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.checkErrorPacket(MySQLProtocol.java:500)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:462)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+17.04.14 17:30:35,032 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17.04.14 17:30:35,102 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+17.04.14 17:30:35,107 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+17.04.14 17:30:35,108 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+17.04.14 17:30:35,109 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+17.04.14 17:30:35,126 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17.04.14 17:30:35,126 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+17.04.14 17:30:35,159 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+17.04.14 17:30:35,195 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17.04.14 17:30:35,198 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+17.04.14 17:30:35,198 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+17.04.14 17:30:35,198 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+17.04.14 17:30:35,199 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+17.04.14 17:30:35,348 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+17.04.14 17:30:35,389 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17.04.14 17:30:35,392 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17.04.14 17:30:35,443 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+17.04.14 17:30:35,444 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+17.04.14 17:30:35,480 INFO  [main]: HibernateTest   - Creating items and characters
+17.04.14 17:30:35,480 INFO  [main]: HibernateTest   - Adding items to characters
+17.04.14 17:30:35,481 INFO  [main]: HibernateTest   - Saving items and characters to the database
+17.04.14 17:30:35,534 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.MappingException: Unknown entity: net.twagame.sandbox.hibernate.Item
+	at org.hibernate.internal.SessionFactoryImpl.getEntityPersister(SessionFactoryImpl.java:1141)
+	at org.hibernate.internal.SessionImpl.getEntityPersister(SessionImpl.java:1433)
+	at org.hibernate.engine.internal.ForeignKeys.isTransient(ForeignKeys.java:208)
+	at org.hibernate.event.internal.AbstractSaveEventListener.getEntityState(AbstractSaveEventListener.java:497)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:100)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:735)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:727)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:723)
+	at net.twagame.sandbox.hibernate.HibernateTest.save(HibernateTest.java:123)
+	at net.twagame.sandbox.hibernate.HibernateTest.execute(HibernateTest.java:56)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:147)
+17.04.14 17:31:46,800 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17.04.14 17:31:46,868 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+17.04.14 17:31:46,872 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+17.04.14 17:31:46,873 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+17.04.14 17:31:46,874 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+17.04.14 17:31:46,891 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17.04.14 17:31:46,891 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+17.04.14 17:31:46,939 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+17.04.14 17:31:46,980 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17.04.14 17:31:46,983 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+17.04.14 17:31:46,983 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+17.04.14 17:31:46,983 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+17.04.14 17:31:46,983 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+17.04.14 17:31:47,063 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+17.04.14 17:31:47,226 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17.04.14 17:31:47,229 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17.04.14 17:31:47,505 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+17.04.14 17:31:47,506 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+17.04.14 17:31:47,508 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+17.04.14 17:31:47,508 ERROR [main]: SchemaExport    - Table 'test.gamecharacter_inventory' doesn't exist
+17.04.14 17:31:47,508 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+17.04.14 17:31:47,508 ERROR [main]: SchemaExport    - HHH000389: Unsuccessful: alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+17.04.14 17:31:47,508 ERROR [main]: SchemaExport    - Table 'test.gamecharacter_inventory' doesn't exist
+17.04.14 17:31:47,508 DEBUG [main]: SQL             - drop table if exists GameCharacter
+17.04.14 17:31:47,522 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+17.04.14 17:31:47,523 DEBUG [main]: SQL             - drop table if exists Item
+17.04.14 17:31:47,533 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+17.04.14 17:31:47,819 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+17.04.14 17:31:48,127 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+17.04.14 17:31:48,386 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+17.04.14 17:31:49,077 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+17.04.14 17:31:49,895 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+17.04.14 17:31:49,945 INFO  [main]: HibernateTest   - Creating items and characters
+17.04.14 17:31:49,945 INFO  [main]: HibernateTest   - Adding items to characters
+17.04.14 17:31:49,945 INFO  [main]: HibernateTest   - Saving items and characters to the database
+17.04.14 17:31:50,006 DEBUG [main]: SQL             - insert into Item (name) values (?)
+17.04.14 17:31:50,012 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 17:31:50,014 DEBUG [main]: SQL             - insert into Item (name) values (?)
+17.04.14 17:31:50,015 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 17:31:50,090 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+17.04.14 17:31:50,145 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 17:31:50,145 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+17.04.14 17:31:50,146 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 17:31:50,289 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 17:31:50,293 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 17:31:50,293 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 17:31:50,829 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 17:31:50,831 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 17:31:50,831 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+17.04.14 17:31:50,831 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+17.04.14 17:31:50,833 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+17.04.14 17:31:50,838 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+17.04.14 17:31:50,838 INFO  [main]: HibernateTest   - Loaded 1 characters
+17.04.14 17:31:50,838 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+17.04.14 17:31:50,838 INFO  [main]: HibernateTest   - Saving changes to the database
+17.04.14 17:31:50,839 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 17:31:50,861 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 17:31:50,861 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 17:31:50,861 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+17.04.14 17:31:50,861 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еще еда=1, Еда=8}
+17.04.14 17:31:50,861 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+17.04.14 17:31:50,863 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+17.04.14 17:31:50,864 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+17.04.14 17:31:50,886 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 17:31:50,887 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 17:31:50,887 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еще еда=3, Еда=1}
+17.04.14 17:31:50,889 DEBUG [main]: HibernateTest   - Finished in 944 milliseconds
+17.04.14 18:00:10,965 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17.04.14 18:00:11,035 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+17.04.14 18:00:11,039 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+17.04.14 18:00:11,040 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+17.04.14 18:00:11,041 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+17.04.14 18:00:11,058 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17.04.14 18:00:11,058 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+17.04.14 18:00:11,096 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+17.04.14 18:00:11,122 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17.04.14 18:00:11,125 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+17.04.14 18:00:11,125 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+17.04.14 18:00:11,126 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+17.04.14 18:00:11,126 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+17.04.14 18:00:11,208 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+17.04.14 18:00:11,327 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17.04.14 18:00:11,331 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17.04.14 18:00:11,481 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+17.04.14 18:00:11,482 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+17.04.14 18:00:11,512 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+17.04.14 18:00:11,545 DEBUG [main]: SQL             - drop table if exists GameCharacter
+17.04.14 18:00:11,645 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+17.04.14 18:00:11,745 DEBUG [main]: SQL             - drop table if exists Item
+17.04.14 18:00:11,870 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+17.04.14 18:00:12,128 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+17.04.14 18:00:12,403 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+17.04.14 18:00:12,669 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+17.04.14 18:00:13,452 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+17.04.14 18:00:14,286 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+17.04.14 18:00:14,335 INFO  [main]: HibernateTest   - Creating items and characters
+17.04.14 18:00:14,335 INFO  [main]: HibernateTest   - Adding items to characters
+17.04.14 18:00:14,336 INFO  [main]: HibernateTest   - Saving items and characters to the database
+17.04.14 18:00:14,369 DEBUG [main]: SQL             - insert into Item (name) values (?)
+17.04.14 18:00:14,375 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:14,377 DEBUG [main]: SQL             - insert into Item (name) values (?)
+17.04.14 18:00:14,377 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:14,381 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+17.04.14 18:00:14,495 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:14,495 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+17.04.14 18:00:14,496 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:14,511 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:14,642 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:14,643 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:15,210 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 18:00:15,213 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 18:00:15,213 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+17.04.14 18:00:15,213 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+17.04.14 18:00:15,214 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+17.04.14 18:00:15,219 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+17.04.14 18:00:15,220 INFO  [main]: HibernateTest   - Loaded 1 characters
+17.04.14 18:00:15,220 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+17.04.14 18:00:15,220 INFO  [main]: HibernateTest   - Saving changes to the database
+17.04.14 18:00:15,221 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:15,253 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 18:00:15,253 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 18:00:15,253 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+17.04.14 18:00:15,254 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8, Еще еда=1}
+17.04.14 18:00:15,254 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+17.04.14 18:00:15,255 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+17.04.14 18:00:15,256 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+17.04.14 18:00:15,278 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 18:00:15,278 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 18:00:15,278 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+17.04.14 18:00:15,279 DEBUG [main]: HibernateTest   - Finished in 944 milliseconds
+17.04.14 18:00:20,298 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17.04.14 18:00:20,367 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+17.04.14 18:00:20,371 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+17.04.14 18:00:20,373 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+17.04.14 18:00:20,374 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+17.04.14 18:00:20,391 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17.04.14 18:00:20,391 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+17.04.14 18:00:20,428 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+17.04.14 18:00:20,454 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17.04.14 18:00:20,457 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+17.04.14 18:00:20,457 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+17.04.14 18:00:20,457 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+17.04.14 18:00:20,458 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+17.04.14 18:00:20,530 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+17.04.14 18:00:20,645 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17.04.14 18:00:20,649 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17.04.14 18:00:20,794 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+17.04.14 18:00:20,796 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_c4fan8otajeh70ipbb54kamjg
+17.04.14 18:00:20,828 DEBUG [main]: SQL             - alter table GameCharacter_inventory drop foreign key FK_ced33vs6jum7myjr2918n0k17
+17.04.14 18:00:20,870 DEBUG [main]: SQL             - drop table if exists GameCharacter
+17.04.14 18:00:20,962 DEBUG [main]: SQL             - drop table if exists GameCharacter_inventory
+17.04.14 18:00:21,062 DEBUG [main]: SQL             - drop table if exists Item
+17.04.14 18:00:21,144 DEBUG [main]: SQL             - create table GameCharacter (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+17.04.14 18:00:21,369 DEBUG [main]: SQL             - create table GameCharacter_inventory (character_id bigint not null, quantity integer, item_id bigint not null, primary key (character_id, item_id)) ENGINE=InnoDB
+17.04.14 18:00:21,652 DEBUG [main]: SQL             - create table Item (id bigint not null auto_increment, name varchar(255), primary key (id)) ENGINE=InnoDB
+17.04.14 18:00:21,902 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_c4fan8otajeh70ipbb54kamjg (item_id), add constraint FK_c4fan8otajeh70ipbb54kamjg foreign key (item_id) references Item (id)
+17.04.14 18:00:22,578 DEBUG [main]: SQL             - alter table GameCharacter_inventory add index FK_ced33vs6jum7myjr2918n0k17 (character_id), add constraint FK_ced33vs6jum7myjr2918n0k17 foreign key (character_id) references GameCharacter (id)
+17.04.14 18:00:23,420 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+17.04.14 18:00:23,474 INFO  [main]: HibernateTest   - Creating items and characters
+17.04.14 18:00:23,474 INFO  [main]: HibernateTest   - Adding items to characters
+17.04.14 18:00:23,474 INFO  [main]: HibernateTest   - Saving items and characters to the database
+17.04.14 18:00:23,506 DEBUG [main]: SQL             - insert into Item (name) values (?)
+17.04.14 18:00:23,513 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:23,515 DEBUG [main]: SQL             - insert into Item (name) values (?)
+17.04.14 18:00:23,516 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:23,520 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+17.04.14 18:00:23,678 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:23,679 DEBUG [main]: SQL             - insert into GameCharacter (name) values (?)
+17.04.14 18:00:23,679 WARN  [main]: JdbcCoordinatorImpl - HHH000386: ResultSet had no statement associated with it, but was not yet registered
+17.04.14 18:00:23,695 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:23,803 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:23,804 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:24,292 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 18:00:24,294 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 18:00:24,294 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+17.04.14 18:00:24,294 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8}
+17.04.14 18:00:24,295 INFO  [main]: HibernateTest   - Loading all characters with name GameCharacter2 from database
+17.04.14 18:00:24,300 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_ where gamecharac0_.name='GameCharacter2'
+17.04.14 18:00:24,300 INFO  [main]: HibernateTest   - Loaded 1 characters
+17.04.14 18:00:24,301 INFO  [main]: HibernateTest   - Adding 1 'Еще еда' to the inventory of all loaded characters
+17.04.14 18:00:24,301 INFO  [main]: HibernateTest   - Saving changes to the database
+17.04.14 18:00:24,301 DEBUG [main]: SQL             - insert into GameCharacter_inventory (character_id, item_id, quantity) values (?, ?, ?)
+17.04.14 18:00:24,328 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 18:00:24,328 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 18:00:24,328 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+17.04.14 18:00:24,328 INFO  [main]: HibernateTest   - Character: Id: 2, Name: GameCharacter2, Inventory: {Еда=8, Еще еда=1}
+17.04.14 18:00:24,328 INFO  [main]: HibernateTest   - Deleting loaded characters from database
+17.04.14 18:00:24,330 DEBUG [main]: SQL             - delete from GameCharacter_inventory where character_id=?
+17.04.14 18:00:24,330 DEBUG [main]: SQL             - delete from GameCharacter where id=?
+17.04.14 18:00:24,353 DEBUG [main]: SQL             - select gamecharac0_.id as id1_0_, gamecharac0_.name as name2_0_ from GameCharacter gamecharac0_
+17.04.14 18:00:24,354 INFO  [main]: HibernateTest   - List of characters:
+17.04.14 18:00:24,354 INFO  [main]: HibernateTest   - Character: Id: 1, Name: GameCharacter1, Inventory: {Еда=1, Еще еда=3}
+17.04.14 18:00:24,356 DEBUG [main]: HibernateTest   - Finished in 882 milliseconds

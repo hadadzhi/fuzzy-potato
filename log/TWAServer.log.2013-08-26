@@ -1,0 +1,116 @@
+26.08.13 02:06:00,256 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 02:10:26,772 DEBUG [main]: SerialTest      - Running tests...
+26.08.13 02:11:19,466 DEBUG [main]: SerialTest      - Construction time: 31 nanoseconds
+26.08.13 02:11:19,466 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time  : 40900 nanoseconds, size = 810, throughput  ~= 48899 packets/s
+26.08.13 02:11:19,466 DEBUG [main]: SerialTest      - Kryo (All default) round trip time               : 5898 nanoseconds, size = 512, throughput  ~= 339097 packets/s
+26.08.13 02:11:19,466 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time        : 3590 nanoseconds, size = 382, throughput  ~= 557103 packets/s
+26.08.13 02:11:19,466 DEBUG [main]: SerialTest      - Manual (With reflection caching) round trip time : 2040 nanoseconds, size = 315, throughput  ~= 980392 packets/s
+26.08.13 03:00:32,586 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:00:33,762 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: [I cannot be cast to [Ljava.lang.Object;
+	at net.twagame.serial.TWADeserializer.readCollection(TWADeserializer.java:358)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:180)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:52)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:348)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:232)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:48)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:128)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:50)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:199)
+26.08.13 03:05:28,330 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:12:16,052 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:19:02,088 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:19:12,898 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: [I cannot be cast to [Ljava.lang.Object;
+	at net.twagame.serial.TWADeserializer.readCollection(TWADeserializer.java:360)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:180)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:52)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:349)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:232)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:48)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:128)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:50)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:199)
+26.08.13 03:20:51,951 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:20:53,809 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: [I cannot be cast to [Ljava.lang.Object;
+	at net.twagame.serial.TWADeserializer.readCollection(TWADeserializer.java:360)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:180)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:52)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:349)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:232)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:48)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:128)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:50)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:199)
+26.08.13 03:23:17,709 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:24:16,053 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:25:10,249 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:30:09,747 DEBUG [main]: SerialTest      - Running tests...
+26.08.13 03:31:09,137 DEBUG [main]: SerialTest      - Construction time: 34 nanoseconds
+26.08.13 03:31:09,137 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time  : 46090 nanoseconds, size = 893, throughput  ~= 43393 packets/s
+26.08.13 03:31:09,138 DEBUG [main]: SerialTest      - Kryo (All default) round trip time               : 6386 nanoseconds, size = 512, throughput  ~= 313185 packets/s
+26.08.13 03:31:09,138 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time        : 4508 nanoseconds, size = 429, throughput  ~= 443655 packets/s
+26.08.13 03:31:09,138 DEBUG [main]: SerialTest      - Manual (With reflection caching) round trip time : 2053 nanoseconds, size = 315, throughput  ~= 974184 packets/s
+26.08.13 03:37:59,989 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:43:50,603 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:48:37,703 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:54:52,294 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 03:59:42,124 DEBUG [main]: SerialTest      - Running tests...
+26.08.13 04:00:39,555 DEBUG [main]: SerialTest      - Construction time: 33 nanoseconds
+26.08.13 04:00:39,555 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time  : 44511 nanoseconds, size = 893, throughput  ~= 44932 packets/s
+26.08.13 04:00:39,555 DEBUG [main]: SerialTest      - Kryo (All default) round trip time               : 6418 nanoseconds, size = 512, throughput  ~= 311623 packets/s
+26.08.13 04:00:39,555 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time        : 4510 nanoseconds, size = 429, throughput  ~= 443458 packets/s
+26.08.13 04:00:39,555 DEBUG [main]: SerialTest      - Manual (With reflection caching) round trip time : 2038 nanoseconds, size = 315, throughput  ~= 981354 packets/s
+26.08.13 04:02:24,342 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 19:06:26,764 DEBUG [main]: ReflectionTest  - java.util.Collection
+26.08.13 19:09:12,888 DEBUG [main]: ReflectionTest  - java.util.ArrayList
+26.08.13 23:27:40,399 DEBUG [main]: ReflectionTest  - java.util.ArrayList
+26.08.13 23:27:46,405 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:27:46,537 ERROR [main]: SerialTest      - Exception: 
+net.twagame.serial.exception.UnknownTagException: TWADeserializer encountered unknown tag: 0
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:305)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:54)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:210)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:100)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:50)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:125)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:47)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:168)
+26.08.13 23:30:46,470 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:33:28,471 ERROR [main]: SerialTest      - Exception: 
+net.twagame.serial.exception.UnknownTagException: TWADeserializer encountered unknown tag: 0
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:305)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:54)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:210)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:100)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:50)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:125)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:47)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:168)
+26.08.13 23:39:19,127 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:40:12,054 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:40:12,153 ERROR [main]: SerialTest      - Exception: 
+net.twagame.serial.exception.UnknownTagException: TWADeserializer encountered unknown tag: 0
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:210)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:100)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:50)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:125)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:47)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:168)
+26.08.13 23:41:32,473 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:45:38,668 DEBUG [main]: SerialTest      - Running tests...
+26.08.13 23:46:27,521 DEBUG [main]: SerialTest      - Construction time: 30 nanoseconds
+26.08.13 23:46:27,521 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time  : 40271 nanoseconds, size = 810, throughput  ~= 49663 packets/s
+26.08.13 23:46:27,521 DEBUG [main]: SerialTest      - Kryo (All default) round trip time               : 4681 nanoseconds, size = 512, throughput  ~= 427259 packets/s
+26.08.13 23:46:27,521 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time        : 3791 nanoseconds, size = 382, throughput  ~= 527565 packets/s
+26.08.13 23:50:22,799 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:51:53,795 DEBUG [main]: SerialTest      - Warming up...
+26.08.13 23:56:21,087 DEBUG [main]: SerialTest      - Running tests...
+26.08.13 23:57:14,248 DEBUG [main]: SerialTest      - Construction time: 32 nanoseconds
+26.08.13 23:57:14,248 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time  : 44144 nanoseconds, size = 810, throughput  ~= 45306 packets/s
+26.08.13 23:57:14,248 DEBUG [main]: SerialTest      - Kryo (All default) round trip time               : 4899 nanoseconds, size = 512, throughput  ~= 408246 packets/s
+26.08.13 23:58:01,322 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time        : 4024 nanoseconds, size = 382, throughput  ~= 497017 packets/s

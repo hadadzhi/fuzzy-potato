@@ -1,0 +1,58 @@
+01.09.13 03:56:45,216 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 03:58:02,167 ERROR [main]: SerialTest      - Exception: 
+java.lang.NullPointerException
+	at net.twagame.serial.util.ClassDescriptorsFactory.ofClass(ClassDescriptorsFactory.java:31)
+	at net.twagame.serial.util.ClassDescriptorsCache.forClass(ClassDescriptorsCache.java:73)
+	at net.twagame.serial.TWASerializer.writeFields(TWASerializer.java:163)
+	at net.twagame.serial.TWASerializer.writeNewObject(TWASerializer.java:155)
+	at net.twagame.serial.TWASerializer.writeObject(TWASerializer.java:126)
+	at net.twagame.sandbox.serial.SerialTest$2.run(SerialTest.java:108)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:56)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:159)
+01.09.13 04:05:42,338 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 04:06:57,589 ERROR [main]: SerialTest      - Exception: 
+java.lang.NullPointerException
+	at net.twagame.serial.util.ClassDescriptorsFactory.ofClass(ClassDescriptorsFactory.java:31)
+	at net.twagame.serial.util.ClassDescriptorsCache.forClass(ClassDescriptorsCache.java:73)
+	at net.twagame.serial.TWASerializer.writeFields(TWASerializer.java:163)
+	at net.twagame.serial.TWASerializer.writeNewObject(TWASerializer.java:155)
+	at net.twagame.serial.TWASerializer.writeObject(TWASerializer.java:126)
+	at net.twagame.sandbox.serial.SerialTest$2.run(SerialTest.java:108)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:56)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:159)
+01.09.13 04:20:09,694 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 04:27:04,548 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 04:28:26,573 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 65625 nanoseconds, size = 1272, throughput  ~= 30475 packets/s
+01.09.13 04:28:26,573 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 7613 nanoseconds, size = 384, throughput  ~= 262678 packets/s
+01.09.13 04:28:26,573 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6755 nanoseconds, size = 548, throughput  ~= 296067 packets/s
+01.09.13 04:28:32,908 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 04:35:09,335 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 04:36:28,056 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 64516 nanoseconds, size = 1272, throughput  ~= 30999 packets/s
+01.09.13 04:36:28,056 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 7583 nanoseconds, size = 384, throughput  ~= 263729 packets/s
+01.09.13 04:36:28,056 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6763 nanoseconds, size = 548, throughput  ~= 295691 packets/s
+01.09.13 04:36:46,511 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 04:37:12,050 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 04:43:45,362 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 04:45:03,793 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 63843 nanoseconds, size = 1272, throughput  ~= 31326 packets/s
+01.09.13 04:45:03,793 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 7412 nanoseconds, size = 384, throughput  ~= 269829 packets/s
+01.09.13 04:45:03,793 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6725 nanoseconds, size = 548, throughput  ~= 297386 packets/s
+01.09.13 04:54:15,161 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 05:00:44,397 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 05:02:01,698 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 63282 nanoseconds, size = 1272, throughput  ~= 31604 packets/s
+01.09.13 05:02:01,698 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 7162 nanoseconds, size = 384, throughput  ~= 279239 packets/s
+01.09.13 05:02:01,698 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6538 nanoseconds, size = 548, throughput  ~= 305882 packets/s
+01.09.13 05:03:53,085 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 05:10:23,863 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 05:11:42,107 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 64171 nanoseconds, size = 1272, throughput  ~= 31166 packets/s
+01.09.13 05:11:42,107 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 7333 nanoseconds, size = 384, throughput  ~= 272727 packets/s
+01.09.13 05:11:42,107 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6417 nanoseconds, size = 548, throughput  ~= 311639 packets/s
+01.09.13 22:40:48,536 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 22:47:09,178 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 22:48:24,775 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 62165 nanoseconds, size = 1272, throughput  ~= 32172 packets/s
+01.09.13 22:48:24,775 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 6988 nanoseconds, size = 384, throughput  ~= 286195 packets/s
+01.09.13 22:48:24,775 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6387 nanoseconds, size = 548, throughput  ~= 313113 packets/s
+01.09.13 22:51:03,757 DEBUG [main]: SerialTest      - Warming up...
+01.09.13 22:57:24,238 DEBUG [main]: SerialTest      - Running tests...
+01.09.13 22:58:39,556 DEBUG [main]: SerialTest      - Java (ObjectOutput/InputStream) round trip time : 62433 nanoseconds, size = 1272, throughput  ~= 32034 packets/s
+01.09.13 22:58:39,556 DEBUG [main]: SerialTest      - Kryo (All default) round trip time              : 7312 nanoseconds, size = 384, throughput  ~= 273509 packets/s
+01.09.13 22:58:39,556 DEBUG [main]: SerialTest      - TWA (Using unsafe access) round trip time       : 6146 nanoseconds, size = 548, throughput  ~= 325384 packets/s

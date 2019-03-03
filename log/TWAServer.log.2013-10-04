@@ -1,0 +1,30 @@
+04.10.13 22:32:01,599 INFO  [main]: PiMain          - Pi = 0.0 Deviation = NaN
+04.10.13 22:32:01,599 INFO  [main]: PiMain          - Time: 186866015 nanoseconds
+04.10.13 22:33:12,267 INFO  [main]: PiMain          - Pi = 3.1423416000000004 Deviation = 6.113827533641401E-4
+04.10.13 22:33:12,267 INFO  [main]: PiMain          - Time: 165865606 nanoseconds
+04.10.13 22:34:06,446 INFO  [main]: PiMain          - Pi = 3.1418399999999997 Deviation = 5.507657699361421E-4
+04.10.13 22:34:06,446 INFO  [main]: PiMain          - Time: 163947747 nanoseconds
+04.10.13 22:34:21,064 INFO  [main]: PiMain          - Pi = 3.141767346938777 Deviation = 1.665780514766458E-4
+04.10.13 22:34:21,064 INFO  [main]: PiMain          - Time: 1497960191 nanoseconds
+04.10.13 22:34:33,591 INFO  [main]: PiMain          - Pi = 3.141184 Deviation = 1.6544275659902946E-4
+04.10.13 22:34:33,591 INFO  [main]: PiMain          - Time: 1448465828 nanoseconds
+04.10.13 22:36:52,226 INFO  [main]: PiMain          - Pi = 3,141349616 Deviation = 0,000152718
+04.10.13 22:36:52,226 INFO  [main]: PiMain          - Time: 1446350606 nanoseconds
+04.10.13 22:39:43,401 INFO  [main]: PiMain          - Pi = 3,141580752 Deviation = 0,000016821
+04.10.13 22:39:43,403 INFO  [main]: PiMain          - Time: 145351847446 nanoseconds
+04.10.13 22:52:02,241 INFO  [main]: PiMain          - Pi = NaN Deviation = NaN
+04.10.13 22:52:02,243 INFO  [main]: PiMain          - Time: 300845473228 nanoseconds
+04.10.13 23:07:27,913 INFO  [main]: PiMain          - Pi = 3,141517362 Deviation = 0,000049566
+04.10.13 23:07:27,915 INFO  [main]: PiMain          - Time: 14573885762 nanoseconds
+04.10.13 23:11:21,804 INFO  [main]: PiMain          - Pi = 3,141563869 Deviation = 0,000017256
+04.10.13 23:11:21,806 INFO  [main]: PiMain          - Time: 144072980960 nanoseconds
+04.10.13 23:13:48,927 INFO  [main]: PiMain          - Pi = 3,141415900 Deviation = 0,000117820
+04.10.13 23:13:48,929 INFO  [main]: PiMain          - Time: 11048940887 nanoseconds
+04.10.13 23:16:27,478 INFO  [main]: PiMain          - Pi = 3,141574804 Deviation = 0,000020484
+04.10.13 23:16:27,480 INFO  [main]: PiMain          - Time: 111587709464 nanoseconds
+04.10.13 23:22:18,815 INFO  [main]: PiMain          - Pi = 3,141578971 Deviation = 0,000015638
+04.10.13 23:22:18,817 INFO  [main]: PiMain          - Time: 172638183384 nanoseconds
+04.10.13 23:26:53,681 INFO  [main]: PiMain          - Pi = 3,141566716 Deviation = 0,000000200
+04.10.13 23:26:53,683 INFO  [main]: PiMain          - Time: 56292655204 nanoseconds
+04.10.13 23:35:50,575 INFO  [main]: PiMain          - Pi = 3,141582769 Deviation = 0,000013832
+04.10.13 23:35:50,577 INFO  [main]: PiMain          - Time: 172031651111 nanoseconds

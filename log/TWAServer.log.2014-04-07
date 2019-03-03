@@ -1,0 +1,221 @@
+07.04.14 20:41:32,831 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+07.04.14 20:41:32,900 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+07.04.14 20:41:32,904 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+07.04.14 20:41:32,905 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+07.04.14 20:41:32,906 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+07.04.14 20:41:32,923 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+07.04.14 20:41:32,923 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+07.04.14 20:41:33,003 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.MappingException: invalid configuration
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2091)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:33)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:146)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 25; Document is invalid: no grammar found.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:227)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:604)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3122)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+07.04.14 20:42:53,178 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+07.04.14 20:42:53,248 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+07.04.14 20:42:53,252 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+07.04.14 20:42:53,253 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+07.04.14 20:42:53,254 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+07.04.14 20:42:53,271 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+07.04.14 20:42:53,271 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+07.04.14 20:42:53,300 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.MappingException: invalid configuration
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2091)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:33)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:146)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 25; Document is invalid: no grammar found.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:227)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:604)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3122)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+07.04.14 20:43:54,890 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+07.04.14 20:43:54,956 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+07.04.14 20:43:54,960 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+07.04.14 20:43:54,961 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+07.04.14 20:43:54,962 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+07.04.14 20:43:54,979 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+07.04.14 20:43:54,979 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+07.04.14 20:43:55,008 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.MappingException: invalid configuration
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2091)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:33)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:146)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 25; Document is invalid: no grammar found.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:227)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:604)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3122)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+07.04.14 20:44:24,459 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+07.04.14 20:44:24,530 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+07.04.14 20:44:24,534 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+07.04.14 20:44:24,535 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+07.04.14 20:44:24,537 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+07.04.14 20:44:24,553 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+07.04.14 20:44:24,553 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+07.04.14 20:44:24,609 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.HibernateException: Could not parse configuration: /hibernate.cfg.xml
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2096)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2008)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:33)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:146)
+Caused by: org.dom4j.DocumentException: Error on line 17 of document  : The markup in the document following the root element must be well-formed. Nested exception: The markup in the document following the root element must be well-formed.
+	at org.dom4j.io.SAXReader.read(SAXReader.java:482)
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2088)
+	... 4 more
+07.04.14 20:44:57,174 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+07.04.14 20:44:57,245 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+07.04.14 20:44:57,249 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+07.04.14 20:44:57,250 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+07.04.14 20:44:57,251 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+07.04.14 20:44:57,268 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+07.04.14 20:44:57,268 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+07.04.14 20:44:57,298 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+07.04.14 20:44:57,325 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+07.04.14 20:44:57,352 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+07.04.14 20:44:57,352 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+07.04.14 20:44:57,352 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+07.04.14 20:44:57,352 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+07.04.14 20:44:58,487 WARN  [main]: JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Could not connect to localhost:3306 : Connection refused: connect
+07.04.14 20:44:58,497 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+07.04.14 20:44:58,506 INFO  [main]: LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+07.04.14 20:44:58,536 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+07.04.14 20:44:58,539 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+07.04.14 20:44:58,626 INFO  [main]: SchemaExport    - HHH000227: Running hbm2ddl schema export
+07.04.14 20:44:59,628 ERROR [main]: SchemaExport    - HHH000231: Schema export unsuccessful
+java.sql.SQLNonTransientConnectionException: Could not connect to localhost:3306 : Connection refused: connect
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:136)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:367)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:500)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at net.twagame.sandbox.hibernate.HibernateTest.<init>(HibernateTest.java:35)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:146)
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect to localhost:3306 : Connection refused: connect
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:651)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:356)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	... 12 more
+07.04.14 20:44:59,631 INFO  [main]: SchemaExport    - HHH000230: Schema export complete
+07.04.14 20:44:59,678 INFO  [main]: HibernateTest   - Creating items and characters
+07.04.14 20:44:59,678 INFO  [main]: HibernateTest   - Adding items to characters
+07.04.14 20:44:59,678 INFO  [main]: HibernateTest   - Saving items and characters to the database
+07.04.14 20:45:00,681 WARN  [main]: SqlExceptionHelper - SQL Error: -1, SQLState: 08
+07.04.14 20:45:00,681 ERROR [main]: SqlExceptionHelper - Could not connect to localhost:3306 : Connection refused: connect
+07.04.14 20:45:00,682 ERROR [main]: HibernateTest   - Error opening Hibernate session:
+org.hibernate.exception.JDBCConnectionException: Could not open connection
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:67)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:160)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1426)
+	at net.twagame.sandbox.hibernate.HibernateTest.save(HibernateTest.java:119)
+	at net.twagame.sandbox.hibernate.HibernateTest.execute(HibernateTest.java:56)
+	at net.twagame.sandbox.hibernate.HibernateTest.main(HibernateTest.java:146)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to localhost:3306 : Connection refused: connect
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:136)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:114)
+	at org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:204)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:292)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 7 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not connect to localhost:3306 : Connection refused: connect
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:651)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.<init>(MySQLProtocol.java:264)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:110)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:356)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.connect(MySQLProtocol.java:647)
+	... 12 more

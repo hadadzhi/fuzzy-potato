@@ -1,0 +1,159 @@
+20.08.13 01:56:12,204 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 01:57:22,940 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 01:57:36,704 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 01:57:36,706 DEBUG [main]: SerialTest      - Java   serialization: 10025 nanoseconds, size = 326, throughput  ~= 199501 packets/s
+20.08.13 01:57:36,706 DEBUG [main]: SerialTest      - Toy    serialization: 2773 nanoseconds, size = 250, throughput  ~= 721240 packets/s
+20.08.13 01:57:36,706 DEBUG [main]: SerialTest      - Manual serialization: 982 nanoseconds, size = 192, throughput  ~= 2036659 packets/s
+20.08.13 01:57:36,707 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 14:47:38,402 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 14:48:48,222 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 14:49:01,987 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 14:49:01,988 DEBUG [main]: SerialTest      - Java   serialization: 10232 nanoseconds, size = 326, throughput  ~= 195465 packets/s
+20.08.13 14:49:01,988 DEBUG [main]: SerialTest      - Toy    serialization: 2846 nanoseconds, size = 250, throughput  ~= 702740 packets/s
+20.08.13 14:49:01,988 DEBUG [main]: SerialTest      - Manual serialization: 974 nanoseconds, size = 192, throughput  ~= 2053388 packets/s
+20.08.13 14:49:01,988 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 14:49:32,469 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 14:50:42,296 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 14:50:55,956 DEBUG [main]: SerialTest      - Construction: 6 nanoseconds
+20.08.13 14:50:55,957 DEBUG [main]: SerialTest      - Java   serialization: 9882 nanoseconds, size = 326, throughput  ~= 202388 packets/s
+20.08.13 14:50:55,957 DEBUG [main]: SerialTest      - Toy    serialization: 2860 nanoseconds, size = 250, throughput  ~= 699300 packets/s
+20.08.13 14:50:55,957 DEBUG [main]: SerialTest      - Manual serialization: 997 nanoseconds, size = 192, throughput  ~= 2006018 packets/s
+20.08.13 14:50:55,957 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 100500, someShort = 16384, someLong = 100500100500, someByte = 64, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 14:52:38,204 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 14:53:48,694 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 14:54:02,554 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 14:54:02,554 DEBUG [main]: SerialTest      - Java   serialization: 9969 nanoseconds, size = 326, throughput  ~= 200621 packets/s
+20.08.13 14:54:02,554 DEBUG [main]: SerialTest      - Toy    serialization: 2861 nanoseconds, size = 250, throughput  ~= 699056 packets/s
+20.08.13 14:54:02,554 DEBUG [main]: SerialTest      - Manual serialization: 959 nanoseconds, size = 192, throughput  ~= 2085505 packets/s
+20.08.13 14:54:02,555 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 15:00:57,035 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 15:02:07,092 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 15:02:20,762 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 15:02:20,762 DEBUG [main]: SerialTest      - Java   serialization: 9834 nanoseconds, size = 326, throughput  ~= 203376 packets/s
+20.08.13 15:02:20,762 DEBUG [main]: SerialTest      - Toy    serialization: 2820 nanoseconds, size = 250, throughput  ~= 709219 packets/s
+20.08.13 15:02:20,763 DEBUG [main]: SerialTest      - Manual serialization: 962 nanoseconds, size = 192, throughput  ~= 2079002 packets/s
+20.08.13 15:02:20,763 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 15:15:27,513 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 15:16:37,098 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 15:16:50,690 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 15:16:50,690 DEBUG [main]: SerialTest      - Java   serialization: 9755 nanoseconds, size = 326, throughput  ~= 205023 packets/s
+20.08.13 15:16:50,690 DEBUG [main]: SerialTest      - Toy    serialization: 2768 nanoseconds, size = 250, throughput  ~= 722543 packets/s
+20.08.13 15:16:50,690 DEBUG [main]: SerialTest      - Manual serialization: 982 nanoseconds, size = 192, throughput  ~= 2036659 packets/s
+20.08.13 15:16:50,691 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 15:22:59,443 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 15:24:09,563 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 15:24:23,379 DEBUG [main]: SerialTest      - Construction: 6 nanoseconds
+20.08.13 15:24:23,380 DEBUG [main]: SerialTest      - Java   serialization: 9848 nanoseconds, size = 326, throughput  ~= 203086 packets/s
+20.08.13 15:24:23,380 DEBUG [main]: SerialTest      - Toy    serialization: 2944 nanoseconds, size = 250, throughput  ~= 679347 packets/s
+20.08.13 15:24:23,380 DEBUG [main]: SerialTest      - Manual serialization: 984 nanoseconds, size = 192, throughput  ~= 2032520 packets/s
+20.08.13 15:24:23,380 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 15:24:37,910 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 15:25:49,696 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 15:26:03,932 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 15:26:03,933 DEBUG [main]: SerialTest      - Java   serialization: 10152 nanoseconds, size = 326, throughput  ~= 197005 packets/s
+20.08.13 15:26:03,933 DEBUG [main]: SerialTest      - Toy    serialization: 2812 nanoseconds, size = 250, throughput  ~= 711237 packets/s
+20.08.13 15:26:03,933 DEBUG [main]: SerialTest      - Manual serialization: 971 nanoseconds, size = 192, throughput  ~= 2059732 packets/s
+20.08.13 15:26:03,933 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 16:43:04,485 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 16:44:16,116 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 16:44:30,228 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 16:44:30,229 DEBUG [main]: SerialTest      - Java   serialization: 10079 nanoseconds, size = 326, throughput  ~= 198432 packets/s
+20.08.13 16:44:30,229 DEBUG [main]: SerialTest      - Toy    serialization: 3304 nanoseconds, size = 250, throughput  ~= 605326 packets/s
+20.08.13 16:44:30,229 DEBUG [main]: SerialTest      - Manual serialization: 1002 nanoseconds, size = 192, throughput  ~= 1996007 packets/s
+20.08.13 16:44:30,229 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 16:46:28,966 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 16:47:40,220 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 16:47:54,181 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 16:47:54,182 DEBUG [main]: SerialTest      - Java   serialization: 9935 nanoseconds, size = 326, throughput  ~= 201308 packets/s
+20.08.13 16:47:54,182 DEBUG [main]: SerialTest      - Toy    serialization: 2977 nanoseconds, size = 250, throughput  ~= 671817 packets/s
+20.08.13 16:47:54,182 DEBUG [main]: SerialTest      - Manual serialization: 974 nanoseconds, size = 192, throughput  ~= 2053388 packets/s
+20.08.13 16:47:54,182 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 16:58:58,126 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 17:00:08,363 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 17:00:22,097 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 17:00:22,097 DEBUG [main]: SerialTest      - Java   serialization: 9909 nanoseconds, size = 326, throughput  ~= 201836 packets/s
+20.08.13 17:00:22,097 DEBUG [main]: SerialTest      - Toy    serialization: 2873 nanoseconds, size = 250, throughput  ~= 696136 packets/s
+20.08.13 17:00:22,098 DEBUG [main]: SerialTest      - Manual serialization: 1002 nanoseconds, size = 192, throughput  ~= 1996007 packets/s
+20.08.13 17:00:22,098 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 17:19:39,672 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 17:20:51,689 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 17:21:05,878 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 17:21:05,879 DEBUG [main]: SerialTest      - Java   serialization: 10244 nanoseconds, size = 326, throughput  ~= 195236 packets/s
+20.08.13 17:21:05,879 DEBUG [main]: SerialTest      - Toy    serialization: 2948 nanoseconds, size = 250, throughput  ~= 678426 packets/s
+20.08.13 17:21:05,879 DEBUG [main]: SerialTest      - Manual serialization: 985 nanoseconds, size = 192, throughput  ~= 2030456 packets/s
+20.08.13 17:21:05,879 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 17:49:56,272 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 17:51:05,372 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 17:51:18,911 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 17:51:18,912 DEBUG [main]: SerialTest      - Java   serialization: 9993 nanoseconds, size = 326, throughput  ~= 200140 packets/s
+20.08.13 17:51:18,912 DEBUG [main]: SerialTest      - Toy    serialization: 2828 nanoseconds, size = 250, throughput  ~= 707213 packets/s
+20.08.13 17:51:18,912 DEBUG [main]: SerialTest      - Manual serialization: 953 nanoseconds, size = 192, throughput  ~= 2098635 packets/s
+20.08.13 17:51:18,912 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 18:08:31,976 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 18:09:42,407 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 18:09:56,412 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 18:09:56,412 DEBUG [main]: SerialTest      - Java   serialization: 9906 nanoseconds, size = 326, throughput  ~= 201897 packets/s
+20.08.13 18:09:56,412 DEBUG [main]: SerialTest      - Toy    serialization: 2957 nanoseconds, size = 250, throughput  ~= 676361 packets/s
+20.08.13 18:09:56,412 DEBUG [main]: SerialTest      - Manual serialization: 974 nanoseconds, size = 192, throughput  ~= 2053388 packets/s
+20.08.13 18:09:56,412 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 18:50:26,517 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 18:50:43,291 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 18:53:01,098 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 18:53:14,687 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 18:53:14,688 DEBUG [main]: SerialTest      - Java   serialization: 9910 nanoseconds, size = 326, throughput  ~= 201816 packets/s
+20.08.13 18:53:14,688 DEBUG [main]: SerialTest      - Toy    serialization: 2813 nanoseconds, size = 250, throughput  ~= 710984 packets/s
+20.08.13 18:53:14,688 DEBUG [main]: SerialTest      - Manual serialization: 942 nanoseconds, size = 192, throughput  ~= 2123142 packets/s
+20.08.13 18:53:14,688 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 18:54:29,975 DEBUG [main]: StringTest      - Warming up...
+20.08.13 18:55:22,488 DEBUG [main]: StringTest      - Their: 580 nanoseconds
+20.08.13 18:55:22,925 DEBUG [main]: StringTest      - My:    430 nanoseconds
+20.08.13 18:55:22,925 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:05:28,035 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:06:20,366 DEBUG [main]: StringTest      - Their: 599 nanoseconds
+20.08.13 19:06:20,806 DEBUG [main]: StringTest      - My:    469 nanoseconds
+20.08.13 19:06:20,807 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:06:39,269 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:07:32,117 DEBUG [main]: StringTest      - Their: 594 nanoseconds
+20.08.13 19:07:32,564 DEBUG [main]: StringTest      - My:    442 nanoseconds
+20.08.13 19:07:32,564 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:08:09,207 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:09:01,716 DEBUG [main]: StringTest      - Their: 566 nanoseconds
+20.08.13 19:09:02,153 DEBUG [main]: StringTest      - My:    434 nanoseconds
+20.08.13 19:09:02,154 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:10:52,757 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:11:46,151 DEBUG [main]: StringTest      - Their: 585 nanoseconds
+20.08.13 19:11:46,596 DEBUG [main]: StringTest      - My:    448 nanoseconds
+20.08.13 19:11:46,596 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:12:46,931 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:13:39,922 DEBUG [main]: StringTest      - Their: 572 nanoseconds
+20.08.13 19:13:40,366 DEBUG [main]: StringTest      - My:    447 nanoseconds
+20.08.13 19:13:40,367 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:14:38,184 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:15:30,243 DEBUG [main]: StringTest      - writeUTF/readUTF:       579 nanoseconds
+20.08.13 19:15:30,700 DEBUG [main]: StringTest      - wirteString/readString: 440 nanoseconds
+20.08.13 19:15:30,700 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 19:19:50,580 DEBUG [main]: StringTest      - Warming up...
+20.08.13 19:20:42,262 DEBUG [main]: StringTest      - writeUTF/readUTF:       560 nanoseconds
+20.08.13 19:20:42,701 DEBUG [main]: StringTest      - wirteString/readString: 433 nanoseconds
+20.08.13 19:20:42,701 DEBUG [main]: StringTest      - Str: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+20.08.13 20:41:44,970 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 20:44:04,778 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 20:44:18,567 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 20:44:18,567 DEBUG [main]: SerialTest      - Java   serialization: 10212 nanoseconds, size = 326, throughput  ~= 195848 packets/s
+20.08.13 20:44:18,568 DEBUG [main]: SerialTest      - Toy    serialization: 3027 nanoseconds, size = 250, throughput  ~= 660720 packets/s
+20.08.13 20:44:18,568 DEBUG [main]: SerialTest      - Manual serialization: 939 nanoseconds, size = 192, throughput  ~= 2129925 packets/s
+20.08.13 20:44:18,568 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 20:44:34,014 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 20:46:54,603 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 20:47:08,574 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 20:47:08,574 DEBUG [main]: SerialTest      - Java   serialization: 10153 nanoseconds, size = 326, throughput  ~= 196986 packets/s
+20.08.13 20:47:08,574 DEBUG [main]: SerialTest      - Toy    serialization: 2877 nanoseconds, size = 250, throughput  ~= 695168 packets/s
+20.08.13 20:47:08,575 DEBUG [main]: SerialTest      - Manual serialization: 962 nanoseconds, size = 192, throughput  ~= 2079002 packets/s
+20.08.13 20:47:08,575 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+20.08.13 23:40:35,591 DEBUG [main]: SerialTest      - Warming up...
+20.08.13 23:43:02,250 DEBUG [main]: SerialTest      - Running tests...
+20.08.13 23:43:16,839 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+20.08.13 23:43:16,839 DEBUG [main]: SerialTest      - Java   serialization: 10941 nanoseconds, size = 326, throughput  ~= 182798 packets/s
+20.08.13 23:43:16,839 DEBUG [main]: SerialTest      - Toy    serialization: 3070 nanoseconds, size = 250, throughput  ~= 651465 packets/s
+20.08.13 23:43:16,839 DEBUG [main]: SerialTest      - Manual serialization: 963 nanoseconds, size = 192, throughput  ~= 2076843 packets/s
+20.08.13 23:43:16,839 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359

@@ -1,0 +1,36 @@
+12.11.14 16:07:21,320 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+12.11.14 16:07:21,422 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12.11.14 16:07:21,427 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+12.11.14 16:07:21,429 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+12.11.14 16:07:21,430 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+12.11.14 16:07:21,455 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+12.11.14 16:07:21,455 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+12.11.14 16:07:21,546 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+12.11.14 16:07:21,602 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12.11.14 16:07:21,606 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+12.11.14 16:07:21,606 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+12.11.14 16:07:21,606 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+12.11.14 16:07:21,607 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+12.11.14 16:07:21,708 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+12.11.14 16:07:21,815 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12.11.14 16:07:21,820 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+12.11.14 16:07:22,182 DEBUG [main]: SQL             - select count(distinct this_.id) as y0_ from Pet this_
+12.11.14 16:07:22,210 DEBUG [main]: SQL             - select this_.name as y0_, this_.level as y1_, (select count(*) from GameCharacter where pet_id = this_.id) as ownerCount, concat('some shit ownerCount = ', (select count(*) from GameCharacter where pet_id = this_.id)) as ownerName from Pet this_
+12.11.14 22:14:42,875 DEBUG [main]: logging         - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+12.11.14 22:14:42,989 INFO  [main]: Version         - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12.11.14 22:14:42,995 INFO  [main]: Version         - HHH000412: Hibernate Core {4.2.4.Final}
+12.11.14 22:14:42,998 INFO  [main]: Environment     - HHH000206: hibernate.properties not found
+12.11.14 22:14:42,999 INFO  [main]: Environment     - HHH000021: Bytecode provider name : javassist
+12.11.14 22:14:43,025 INFO  [main]: Configuration   - HHH000043: Configuring from resource: /hibernate.cfg.xml
+12.11.14 22:14:43,025 INFO  [main]: Configuration   - HHH000040: Configuration resource: /hibernate.cfg.xml
+12.11.14 22:14:43,128 INFO  [main]: Configuration   - HHH000041: Configured SessionFactory: null
+12.11.14 22:14:43,170 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12.11.14 22:14:43,174 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+12.11.14 22:14:43,174 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+12.11.14 22:14:43,174 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000401: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/twaserver]
+12.11.14 22:14:43,175 INFO  [main]: DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=twaserver, password=****}
+12.11.14 22:14:43,285 INFO  [main]: Dialect         - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+12.11.14 22:14:43,398 INFO  [main]: TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12.11.14 22:14:43,404 INFO  [main]: ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+12.11.14 22:14:43,844 DEBUG [main]: SQL             - select count(distinct this_.id) as y0_ from Pet this_
+12.11.14 22:14:43,876 DEBUG [main]: SQL             - select this_.name as y0_, this_.level as y1_, (select count(*) from GameCharacter where pet_id = this_.id) as ownerCount, concat('some shit ownerCount = ', (select count(*) from GameCharacter where pet_id = this_.id)) as ownerName from Pet this_

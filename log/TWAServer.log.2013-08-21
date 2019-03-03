@@ -1,0 +1,187 @@
+21.08.13 00:19:04,568 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 00:19:34,763 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.ReflectionTest$Bar
+21.08.13 00:19:34,763 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.ReflectionTest$Foo
+21.08.13 00:20:59,339 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 00:20:59,340 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 00:21:13,531 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 00:21:13,531 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 00:21:46,150 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 00:21:46,150 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 00:21:54,286 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 00:21:54,287 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 01:22:19,422 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 01:24:36,361 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 01:24:50,007 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 01:24:50,007 DEBUG [main]: SerialTest      - Java   serialization: 9853 nanoseconds, size = 326, throughput  ~= 202983 packets/s
+21.08.13 01:24:50,007 DEBUG [main]: SerialTest      - Toy    serialization: 2789 nanoseconds, size = 250, throughput  ~= 717102 packets/s
+21.08.13 01:24:50,008 DEBUG [main]: SerialTest      - Manual serialization: 938 nanoseconds, size = 192, throughput  ~= 2132196 packets/s
+21.08.13 01:24:50,008 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 11:24:08,913 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 11:26:29,311 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 11:26:43,176 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 11:26:43,176 DEBUG [main]: SerialTest      - Java   serialization: 10286 nanoseconds, size = 326, throughput  ~= 194439 packets/s
+21.08.13 11:26:43,176 DEBUG [main]: SerialTest      - Toy    serialization: 2806 nanoseconds, size = 250, throughput  ~= 712758 packets/s
+21.08.13 11:26:43,176 DEBUG [main]: SerialTest      - Manual serialization: 935 nanoseconds, size = 192, throughput  ~= 2139037 packets/s
+21.08.13 11:26:43,177 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 13:50:57,451 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 13:53:12,706 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 13:53:26,102 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 13:53:26,102 DEBUG [main]: SerialTest      - Java   serialization: 9483 nanoseconds, size = 326, throughput  ~= 210903 packets/s
+21.08.13 13:53:26,103 DEBUG [main]: SerialTest      - Toy    serialization: 2871 nanoseconds, size = 250, throughput  ~= 696621 packets/s
+21.08.13 13:53:26,103 DEBUG [main]: SerialTest      - Manual serialization: 941 nanoseconds, size = 192, throughput  ~= 2125398 packets/s
+21.08.13 13:53:26,103 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 14:09:08,352 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 14:09:08,353 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 14:09:08,354 DEBUG [main]: ReflectionTest  - Bar's inherited a = 
+21.08.13 14:09:17,381 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 14:09:17,382 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 14:09:17,383 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 17:00:04,104 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 17:02:21,052 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 17:02:34,587 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 17:02:34,587 DEBUG [main]: SerialTest      - Java   serialization: 9659 nanoseconds, size = 326, throughput  ~= 207060 packets/s
+21.08.13 17:02:34,587 DEBUG [main]: SerialTest      - Toy    serialization: 2765 nanoseconds, size = 250, throughput  ~= 723327 packets/s
+21.08.13 17:02:34,587 DEBUG [main]: SerialTest      - Manual serialization: 929 nanoseconds, size = 192, throughput  ~= 2152852 packets/s
+21.08.13 17:02:34,588 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 19:08:52,054 DEBUG [main]: TWASerialTest   - Size = 75
+21.08.13 19:09:29,063 DEBUG [main]: TWASerialTest   - Size = 200
+21.08.13 19:09:42,936 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 19:11:59,092 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 19:12:12,628 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 19:12:12,629 DEBUG [main]: SerialTest      - Java   serialization: 9768 nanoseconds, size = 326, throughput  ~= 204750 packets/s
+21.08.13 19:12:12,629 DEBUG [main]: SerialTest      - Toy    serialization: 2844 nanoseconds, size = 250, throughput  ~= 703234 packets/s
+21.08.13 19:12:12,629 DEBUG [main]: SerialTest      - Manual serialization: 932 nanoseconds, size = 192, throughput  ~= 2145922 packets/s
+21.08.13 19:12:12,629 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 19:56:15,299 DEBUG [main]: TWASerialTest   - Size = 193
+21.08.13 19:57:53,906 DEBUG [main]: TWASerialTest   - Size = 389
+21.08.13 19:59:11,633 DEBUG [main]: TWASerialTest   - Size = 389
+21.08.13 20:28:40,825 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:28:40,826 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:28:40,827 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:28:40,827 DEBUG [main]: ReflectionTest  - HashSet
+21.08.13 20:30:32,033 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:30:32,034 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:30:32,035 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:30:32,035 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:32:20,495 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:32:20,495 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:32:20,496 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:32:20,496 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:32:20,497 DEBUG [main]: ReflectionTest  - E
+21.08.13 20:32:54,377 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:32:54,377 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:32:54,378 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:32:54,378 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:32:54,378 DEBUG [main]: ReflectionTest  - null
+21.08.13 20:33:33,357 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:33:33,358 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:33:33,358 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:33:33,358 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:33:33,359 DEBUG [main]: ReflectionTest  - java.util.AbstractSet<E>
+21.08.13 20:33:49,081 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:33:49,082 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:33:49,082 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:33:49,082 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:33:49,083 DEBUG [main]: ReflectionTest  - java.util.Set<E>
+21.08.13 20:34:08,547 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:34:08,548 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:34:08,549 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:34:08,549 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:34:08,549 DEBUG [main]: ReflectionTest  - HashSet
+21.08.13 20:34:17,378 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:34:17,378 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:34:17,379 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:34:17,379 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:34:17,379 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 20:34:26,229 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 20:34:26,230 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 20:34:26,231 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 20:34:26,231 DEBUG [main]: ReflectionTest  - true
+21.08.13 20:34:26,231 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 20:36:29,939 DEBUG [main]: TWASerialTest   - Size = 389
+21.08.13 20:36:40,312 DEBUG [main]: TWASerialTest   - Size = 388
+21.08.13 20:36:53,655 DEBUG [main]: TWASerialTest   - Size = 385
+21.08.13 20:37:07,409 DEBUG [main]: TWASerialTest   - Size = 388
+21.08.13 20:39:10,178 DEBUG [main]: TWASerialTest   - Size = 388
+21.08.13 20:42:09,240 DEBUG [main]: TWASerialTest   - Size = 193
+21.08.13 20:44:02,594 DEBUG [main]: TWASerialTest   - Size = 215
+21.08.13 20:44:47,382 DEBUG [main]: TWASerialTest   - Size = 5
+21.08.13 20:45:00,239 DEBUG [main]: TWASerialTest   - Size = 215
+21.08.13 21:44:19,714 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 21:47:17,368 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 21:50:13,565 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 21:50:31,108 DEBUG [main]: SerialTest      - Construction: 13 nanoseconds
+21.08.13 21:50:31,109 DEBUG [main]: SerialTest      - Java   serialization: 15431 nanoseconds, size = 414, throughput  ~= 129609 packets/s
+21.08.13 21:50:31,109 DEBUG [main]: SerialTest      - Manual serialization: 2073 nanoseconds, size = 192, throughput  ~= 964785 packets/s
+21.08.13 21:50:31,109 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 22:58:34,598 DEBUG [main]: TWASerialTest   - Size = 219
+21.08.13 22:58:34,600 DEBUG [main]: TWASerialTest   - integrity: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 22:59:36,183 DEBUG [main]: TWASerialTest   - Size = 219
+21.08.13 22:59:36,184 DEBUG [main]: TWASerialTest   - integrity: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359, someStringArray = [Ljava.lang.String;@5152441a
+21.08.13 22:59:48,179 DEBUG [main]: TWASerialTest   - Size = 219
+21.08.13 22:59:48,180 DEBUG [main]: TWASerialTest   - integrity: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359, someStringArray = [Ljava.lang.String;@6085968b
+21.08.13 23:01:53,894 DEBUG [main]: TWASerialTest   - Size = 219
+21.08.13 23:01:53,895 DEBUG [main]: TWASerialTest   - integrity: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359, someStringArray =  One Two Three
+21.08.13 23:02:10,366 DEBUG [main]: TWASerialTest   - Size = 219
+21.08.13 23:02:10,367 DEBUG [main]: TWASerialTest   - integrity: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359, someStringArray = One Two Three 
+21.08.13 23:15:55,146 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 23:15:55,146 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 23:15:55,147 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 23:15:55,147 DEBUG [main]: ReflectionTest  - true
+21.08.13 23:15:55,147 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 23:15:55,147 DEBUG [main]: ReflectionTest  - -8
+21.08.13 23:16:09,871 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 23:16:09,871 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 23:16:09,872 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 23:16:09,872 DEBUG [main]: ReflectionTest  - true
+21.08.13 23:16:09,872 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 23:16:09,872 DEBUG [main]: ReflectionTest  - 0
+21.08.13 23:16:17,280 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 23:16:17,280 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 23:16:17,281 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 23:16:17,281 DEBUG [main]: ReflectionTest  - true
+21.08.13 23:16:17,282 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 23:16:17,282 DEBUG [main]: ReflectionTest  - -1
+21.08.13 23:16:23,317 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 23:16:23,318 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 23:16:23,319 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 23:16:23,319 DEBUG [main]: ReflectionTest  - true
+21.08.13 23:16:23,319 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 23:16:23,319 DEBUG [main]: ReflectionTest  - -8
+21.08.13 23:17:20,371 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Foo
+21.08.13 23:17:20,372 DEBUG [main]: ReflectionTest  - FQN: net.twagame.sandbox.reflection.Bar
+21.08.13 23:17:20,373 DEBUG [main]: ReflectionTest  - Bar's inherited a = 100500
+21.08.13 23:17:20,373 DEBUG [main]: ReflectionTest  - true
+21.08.13 23:17:20,373 DEBUG [main]: ReflectionTest  - java.util.HashSet
+21.08.13 23:17:20,373 DEBUG [main]: ReflectionTest  - -8
+21.08.13 23:31:23,652 DEBUG [main]: TWASerialTest   - Size = 248
+21.08.13 23:31:23,654 DEBUG [main]: TWASerialTest   - integrity: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359, someStringArray = One Two Three , anotherStringArray = One Two Three 
+21.08.13 23:37:05,931 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 23:41:04,674 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 23:41:28,423 DEBUG [main]: SerialTest      - Construction: 11 nanoseconds
+21.08.13 23:41:28,423 DEBUG [main]: SerialTest      - Java   serialization: 15932 nanoseconds, size = 426, throughput  ~= 125533 packets/s
+21.08.13 23:41:28,423 DEBUG [main]: SerialTest      - Manual serialization: 2872 nanoseconds, size = 209, throughput  ~= 696378 packets/s
+21.08.13 23:41:28,423 DEBUG [main]: SerialTest      - TWA    serialization: 4956 nanoseconds, size = 243, throughput  ~= 403551 packets/s
+21.08.13 23:41:28,423 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359, someStringArray = One Two Three 
+21.08.13 23:44:33,999 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 23:45:51,512 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 23:46:06,715 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 23:46:06,715 DEBUG [main]: SerialTest      - Java   serialization: 9964 nanoseconds, size = 326, throughput  ~= 200722 packets/s
+21.08.13 23:46:06,715 DEBUG [main]: SerialTest      - Manual serialization: 2464 nanoseconds, size = 192, throughput  ~= 811688 packets/s
+21.08.13 23:46:06,715 DEBUG [main]: SerialTest      - TWA    serialization: 2793 nanoseconds, size = 202, throughput  ~= 716075 packets/s
+21.08.13 23:46:06,715 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 23:52:10,341 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 23:53:25,544 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 23:53:40,312 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 23:53:40,312 DEBUG [main]: SerialTest      - Java   serialization: 9986 nanoseconds, size = 326, throughput  ~= 200280 packets/s
+21.08.13 23:53:40,312 DEBUG [main]: SerialTest      - TWA    serialization: 2566 nanoseconds, size = 202, throughput  ~= 779423 packets/s
+21.08.13 23:53:40,312 DEBUG [main]: SerialTest      - Manual serialization: 2185 nanoseconds, size = 192, throughput  ~= 915331 packets/s
+21.08.13 23:53:40,312 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 23:56:55,207 DEBUG [main]: SerialTest      - Warming up...
+21.08.13 23:58:09,920 DEBUG [main]: SerialTest      - Running tests...
+21.08.13 23:58:24,746 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+21.08.13 23:58:24,746 DEBUG [main]: SerialTest      - Java   serialization: 9730 nanoseconds, size = 326, throughput  ~= 205549 packets/s
+21.08.13 23:58:24,746 DEBUG [main]: SerialTest      - TWA    serialization: 2734 nanoseconds, size = 202, throughput  ~= 731528 packets/s
+21.08.13 23:58:24,746 DEBUG [main]: SerialTest      - Manual serialization: 2225 nanoseconds, size = 192, throughput  ~= 898876 packets/s
+21.08.13 23:58:24,746 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+21.08.13 23:59:01,445 DEBUG [main]: SerialTest      - Warming up...

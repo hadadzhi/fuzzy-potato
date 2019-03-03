@@ -1,0 +1,50 @@
+stream:
+	magic contents
+	reset
+	
+magic:
+	(int)magic_number /*A magic number is generated and assigned to each authorized client, reject packets with wrong magic number*/
+
+reset:
+	TAG_RESET /*Handles are assigned to objects, as they are written to the stream, in ascending order. This tag indicates the reset of all assigned handles*/
+	
+contents:
+	content
+	contents
+	
+content:
+	some_shit /* Maybe some non-object data written to the same stream*/
+	object
+	
+object:
+	new_object
+	reference
+	
+new_object:
+	TAG_OBJECT (int)handle (string)identifier data /*Number of data entries is specified by the descriptor of the object*/
+	
+reference:
+	TAG_REFERENCE (int)handle
+	
+data:
+	data_entry
+	data
+	
+data_entry: /*Data for an object is written in the same order as it's specified in the descriptor of that object*/
+	primitive_value /*plain bytes*/
+	object
+	collection
+	map
+	
+collection:
+	TAG_COLLECTION (int)size data
+
+map:
+	TAG_MAP (int)size map_data
+	
+map_data:
+	map_data_entry
+	map_data
+
+map_data_entry:
+	(data_entry)key (data_entry)value

@@ -1,0 +1,333 @@
+22.08.13 00:00:17,108 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 00:00:31,990 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+22.08.13 00:00:31,990 DEBUG [main]: SerialTest      - Java   serialization: 9785 nanoseconds, size = 326, throughput  ~= 204394 packets/s
+22.08.13 00:00:31,990 DEBUG [main]: SerialTest      - TWA    serialization: 2767 nanoseconds, size = 202, throughput  ~= 722804 packets/s
+22.08.13 00:00:31,990 DEBUG [main]: SerialTest      - Manual serialization: 2404 nanoseconds, size = 192, throughput  ~= 831946 packets/s
+22.08.13 00:00:31,991 DEBUG [main]: SerialTest      - Integrity check: someStr = Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua., someInt = 2147483647, someShort = 32767, someLong = 9223372036854775807, someByte = 127, someBoolean = true, someFloat = 3.14, someDouble = 3.14159265359
+22.08.13 00:17:03,930 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 00:27:58,845 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 00:28:19,125 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 00:28:38,241 ERROR [main]: SerialTest      - Exception: 
+java.lang.NullPointerException
+	at net.twagame.serial.TWASerializer.writeObject(TWASerializer.java:40)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:141)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:43)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:163)
+22.08.13 00:29:00,762 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 00:30:04,843 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 00:45:12,755 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 01:01:28,520 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 01:09:02,466 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 01:09:02,467 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 01:14:20,788 DEBUG [main]: TWASerialTest   - Size = 86
+22.08.13 01:14:20,789 DEBUG [main]: TWASerialTest   - integrity: net.twagame.sandbox.serial.SomeClass@5eab5809
+22.08.13 01:14:46,854 DEBUG [main]: TWASerialTest   - Size = 86
+22.08.13 01:14:46,855 DEBUG [main]: TWASerialTest   - integrity: net.twagame.sandbox.serial.SomeClass@6920d5d
+22.08.13 01:14:54,282 DEBUG [main]: TWASerialTest   - Size = 86
+22.08.13 01:19:42,333 DEBUG [main]: TWASerialTest   - Size = 86
+22.08.13 01:19:42,334 DEBUG [main]: TWASerialTest   - integrity: net.twagame.sandbox.serial.SomeClass@6920d5d
+22.08.13 01:19:54,315 DEBUG [main]: TWASerialTest   - Size = 86
+22.08.13 01:20:18,530 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 01:20:18,531 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 01:21:11,874 DEBUG [main]: SerialTest      - Construction: 35 nanoseconds
+22.08.13 01:21:11,874 DEBUG [main]: SerialTest      - Java   serialization: 42351 nanoseconds, size = 830, throughput  ~= 47224 packets/s
+22.08.13 01:21:11,875 DEBUG [main]: SerialTest      - TWA    serialization: 9623 nanoseconds, size = 446, throughput  ~= 207835 packets/s
+22.08.13 01:21:11,875 DEBUG [main]: SerialTest      - Integrity check: net.twagame.sandbox.serial.testclass.MediaContent@30899cdb
+22.08.13 01:21:34,634 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 01:25:52,327 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 01:26:43,412 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 01:26:43,412 DEBUG [main]: SerialTest      - Java   serialization: 41063 nanoseconds, size = 830, throughput  ~= 48705 packets/s
+22.08.13 01:26:43,412 DEBUG [main]: SerialTest      - TWA    serialization: 9844 nanoseconds, size = 446, throughput  ~= 203169 packets/s
+22.08.13 01:26:43,412 DEBUG [main]: SerialTest      - Integrity check: net.twagame.sandbox.serial.testclass.MediaContent@c68beb0
+22.08.13 01:29:45,822 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 01:34:18,010 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 01:35:11,694 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 01:35:11,694 DEBUG [main]: SerialTest      - Java   serialization: 43726 nanoseconds, size = 830, throughput  ~= 45739 packets/s
+22.08.13 01:35:11,694 DEBUG [main]: SerialTest      - TWA    serialization: 9770 nanoseconds, size = 446, throughput  ~= 204708 packets/s
+22.08.13 01:35:11,695 DEBUG [main]: SerialTest      - Integrity check: net.twagame.sandbox.serial.testclass.MediaContent@2a0895c4
+22.08.13 12:22:03,951 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 12:26:23,505 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 12:27:15,053 DEBUG [main]: SerialTest      - Construction: 37 nanoseconds
+22.08.13 12:27:15,053 DEBUG [main]: SerialTest      - Java   serialization: 40890 nanoseconds, size = 830, throughput  ~= 48911 packets/s
+22.08.13 12:27:15,053 DEBUG [main]: SerialTest      - TWA    serialization: 10263 nanoseconds, size = 446, throughput  ~= 194874 packets/s
+22.08.13 12:27:15,054 DEBUG [main]: SerialTest      - Integrity check: net.twagame.sandbox.serial.testclass.MediaContent@37b263d3
+22.08.13 13:09:15,410 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 13:13:33,482 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 13:14:24,651 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 13:14:24,651 DEBUG [main]: SerialTest      - Java   serialization: 41076 nanoseconds, size = 830, throughput  ~= 48690 packets/s
+22.08.13 13:14:24,651 DEBUG [main]: SerialTest      - TWA    serialization: 9530 nanoseconds, size = 446, throughput  ~= 209863 packets/s
+22.08.13 13:14:24,651 DEBUG [main]: SerialTest      - Integrity check: net.twagame.sandbox.serial.testclass.MediaContent@1f0e6d55
+22.08.13 14:04:11,482 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 14:08:55,662 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 14:09:52,185 DEBUG [main]: SerialTest      - Construction: 39 nanoseconds
+22.08.13 14:09:52,185 DEBUG [main]: SerialTest      - Java   serialization: 45674 nanoseconds, size = 830, throughput  ~= 43788 packets/s
+22.08.13 14:09:52,185 DEBUG [main]: SerialTest      - TWA    serialization: 10683 nanoseconds, size = 446, throughput  ~= 187213 packets/s
+22.08.13 15:07:41,510 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 15:12:18,330 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 15:13:11,456 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 15:13:11,456 DEBUG [main]: SerialTest      - Java   serialization: 43232 nanoseconds, size = 830, throughput  ~= 46262 packets/s
+22.08.13 15:13:11,456 DEBUG [main]: SerialTest      - TWA    serialization: 10393 nanoseconds, size = 446, throughput  ~= 192437 packets/s
+22.08.13 15:13:11,456 DEBUG [main]: SerialTest      - Integrity check: net.twagame.sandbox.serial.testclass.MediaContent@14308698
+22.08.13 15:28:07,998 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 15:28:26,004 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 15:32:46,836 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 15:33:40,279 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 15:33:40,279 DEBUG [main]: SerialTest      - Java   serialization: 43630 nanoseconds, size = 830, throughput  ~= 45840 packets/s
+22.08.13 15:33:40,279 DEBUG [main]: SerialTest      - TWA    serialization: 10117 nanoseconds, size = 446, throughput  ~= 197687 packets/s
+22.08.13 15:48:49,643 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 15:53:32,926 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 15:54:28,160 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 15:54:28,161 DEBUG [main]: SerialTest      - Java   serialization: 44424 nanoseconds, size = 830, throughput  ~= 45020 packets/s
+22.08.13 15:54:28,161 DEBUG [main]: SerialTest      - TWA    serialization: 10523 nanoseconds, size = 446, throughput  ~= 190059 packets/s
+22.08.13 15:54:37,810 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 15:59:07,742 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 16:00:01,509 DEBUG [main]: SerialTest      - Construction: 37 nanoseconds
+22.08.13 16:00:01,510 DEBUG [main]: SerialTest      - Java   serialization: 43932 nanoseconds, size = 830, throughput  ~= 45524 packets/s
+22.08.13 16:00:01,510 DEBUG [main]: SerialTest      - TWA    serialization: 9947 nanoseconds, size = 446, throughput  ~= 201065 packets/s
+22.08.13 16:23:53,970 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 16:28:18,443 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 16:29:10,986 DEBUG [main]: SerialTest      - Construction: 50 nanoseconds
+22.08.13 16:29:10,986 DEBUG [main]: SerialTest      - Java   serialization: 42287 nanoseconds, size = 830, throughput  ~= 47295 packets/s
+22.08.13 16:29:10,986 DEBUG [main]: SerialTest      - TWA    serialization: 9741 nanoseconds, size = 446, throughput  ~= 205317 packets/s
+22.08.13 16:38:15,463 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 16:41:16,178 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 16:45:40,640 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 16:46:33,152 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 16:46:33,152 DEBUG [main]: SerialTest      - Java   serialization: 42752 nanoseconds, size = 830, throughput  ~= 46781 packets/s
+22.08.13 16:46:33,152 DEBUG [main]: SerialTest      - TWA    serialization: 10053 nanoseconds, size = 446, throughput  ~= 198945 packets/s
+22.08.13 16:47:00,583 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 16:49:42,968 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 16:50:36,113 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 16:50:36,113 DEBUG [main]: SerialTest      - Java   serialization: 43132 nanoseconds, size = 830, throughput  ~= 46369 packets/s
+22.08.13 16:50:36,113 DEBUG [main]: SerialTest      - TWA    serialization: 9727 nanoseconds, size = 446, throughput  ~= 205613 packets/s
+22.08.13 16:51:02,912 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 16:53:49,386 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 16:54:43,916 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 16:54:43,917 DEBUG [main]: SerialTest      - Java   serialization: 44211 nanoseconds, size = 830, throughput  ~= 45237 packets/s
+22.08.13 16:54:43,917 DEBUG [main]: SerialTest      - TWA    serialization: 9893 nanoseconds, size = 446, throughput  ~= 202163 packets/s
+22.08.13 18:26:10,297 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:26:10,416 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.util.Collection
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:279)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:29:46,219 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:29:46,337 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.util.Collection
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:279)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:32:47,044 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:35:33,662 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:35:56,461 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:38:19,383 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.util.Collection
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:279)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:38:24,858 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:41:34,446 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:41:34,577 ERROR [main]: SerialTest      - Exception: 
+java.io.EOFException
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:44:00,885 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:44:01,009 ERROR [main]: SerialTest      - Exception: 
+java.io.EOFException
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:44:46,508 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:45:03,652 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:45:27,883 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:45:32,913 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:46:39,647 ERROR [main]: SerialTest      - Exception: 
+java.io.EOFException
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:46:49,131 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:49:26,551 ERROR [main]: SerialTest      - Exception: 
+java.io.EOFException
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:74)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:289)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.serial.TWADeserializer.readArray(TWADeserializer.java:211)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:44)
+	at net.twagame.serial.TWADeserializer.readFields(TWADeserializer.java:281)
+	at net.twagame.serial.TWADeserializer.readNewObject(TWADeserializer.java:228)
+	at net.twagame.serial.TWADeserializer.readObject(TWADeserializer.java:41)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:119)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:42)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:135)
+22.08.13 18:53:34,836 DEBUG [main]: TWASerialTest   - Size: 200
+22.08.13 18:54:37,026 DEBUG [main]: TWASerialTest   - Size: 446
+22.08.13 18:54:42,194 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 18:57:13,992 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 18:58:04,348 DEBUG [main]: SerialTest      - Construction: 37 nanoseconds
+22.08.13 18:58:04,348 DEBUG [main]: SerialTest      - Java   serialization: 43057 nanoseconds, size = 830, throughput  ~= 46450 packets/s
+22.08.13 18:58:04,348 DEBUG [main]: SerialTest      - TWA    serialization: 7335 nanoseconds, size = 446, throughput  ~= 272665 packets/s
+22.08.13 18:58:23,075 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:01:01,018 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:01:52,968 DEBUG [main]: SerialTest      - Construction: 38 nanoseconds
+22.08.13 19:01:52,968 DEBUG [main]: SerialTest      - Java   serialization: 44517 nanoseconds, size = 830, throughput  ~= 44926 packets/s
+22.08.13 19:01:52,968 DEBUG [main]: SerialTest      - TWA    serialization: 7241 nanoseconds, size = 446, throughput  ~= 276204 packets/s
+22.08.13 19:05:16,537 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:07:55,220 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:08:47,369 DEBUG [main]: SerialTest      - Construction: 37 nanoseconds
+22.08.13 19:08:47,370 DEBUG [main]: SerialTest      - Java   serialization: 45162 nanoseconds, size = 830, throughput  ~= 44285 packets/s
+22.08.13 19:08:47,370 DEBUG [main]: SerialTest      - TWA    serialization: 7513 nanoseconds, size = 446, throughput  ~= 266205 packets/s
+22.08.13 19:12:42,276 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:15:20,330 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:16:12,333 DEBUG [main]: SerialTest      - Construction: 54 nanoseconds
+22.08.13 19:16:12,333 DEBUG [main]: SerialTest      - Java   serialization: 44846 nanoseconds, size = 830, throughput  ~= 44597 packets/s
+22.08.13 19:16:12,333 DEBUG [main]: SerialTest      - TWA    serialization: 7091 nanoseconds, size = 446, throughput  ~= 282047 packets/s
+22.08.13 19:17:00,447 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:19:34,971 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:20:25,959 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 19:20:25,960 DEBUG [main]: SerialTest      - Java   serialization: 44206 nanoseconds, size = 830, throughput  ~= 45242 packets/s
+22.08.13 19:20:25,960 DEBUG [main]: SerialTest      - TWA    serialization: 7189 nanoseconds, size = 446, throughput  ~= 278202 packets/s
+22.08.13 19:20:41,350 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:23:17,339 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:24:08,498 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 19:24:08,498 DEBUG [main]: SerialTest      - Java   serialization: 43737 nanoseconds, size = 830, throughput  ~= 45727 packets/s
+22.08.13 19:24:08,498 DEBUG [main]: SerialTest      - TWA    serialization: 7216 nanoseconds, size = 446, throughput  ~= 277161 packets/s
+22.08.13 19:26:39,015 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:29:13,413 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:30:04,155 DEBUG [main]: SerialTest      - Construction: 37 nanoseconds
+22.08.13 19:30:04,155 DEBUG [main]: SerialTest      - Java   serialization: 43323 nanoseconds, size = 830, throughput  ~= 46164 packets/s
+22.08.13 19:30:04,155 DEBUG [main]: SerialTest      - TWA    serialization: 7302 nanoseconds, size = 446, throughput  ~= 273897 packets/s
+22.08.13 19:47:15,053 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 19:49:48,927 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 19:50:37,967 DEBUG [main]: SerialTest      - Construction: 40 nanoseconds
+22.08.13 19:50:37,967 DEBUG [main]: SerialTest      - Java   serialization: 40746 nanoseconds, size = 830, throughput  ~= 49084 packets/s
+22.08.13 19:50:37,967 DEBUG [main]: SerialTest      - TWA    serialization: 6847 nanoseconds, size = 446, throughput  ~= 292098 packets/s
+22.08.13 20:24:21,955 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 20:26:50,947 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 20:27:39,846 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 20:27:39,846 DEBUG [main]: SerialTest      - Java   serialization: 41758 nanoseconds, size = 830, throughput  ~= 47895 packets/s
+22.08.13 20:27:39,846 DEBUG [main]: SerialTest      - TWA    serialization: 6874 nanoseconds, size = 446, throughput  ~= 290951 packets/s
+22.08.13 20:31:42,507 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 20:31:42,529 ERROR [main]: SerialTest      - Exception: 
+net.twagame.serial.NotTWASerializableException: The class net.twagame.sandbox.serial.testclass.SomeClass does not implement the TWASerializable interface
+	at net.twagame.serial.TWASerializer.writeObject(TWASerializer.java:43)
+	at net.twagame.sandbox.serial.SerialTest$3.run(SerialTest.java:111)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:41)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:134)
+22.08.13 20:32:10,706 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 20:32:49,336 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 20:33:01,568 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+22.08.13 20:33:01,568 DEBUG [main]: SerialTest      - Java   serialization: 10330 nanoseconds, size = 339, throughput  ~= 193610 packets/s
+22.08.13 20:33:01,568 DEBUG [main]: SerialTest      - TWA    serialization: 1959 nanoseconds, size = 212, throughput  ~= 1020929 packets/s
+22.08.13 20:33:39,248 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 20:34:16,676 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 20:34:28,505 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+22.08.13 20:34:28,505 DEBUG [main]: SerialTest      - Java   serialization: 10104 nanoseconds, size = 339, throughput  ~= 197941 packets/s
+22.08.13 20:34:28,505 DEBUG [main]: SerialTest      - TWA    serialization: 1916 nanoseconds, size = 212, throughput  ~= 1043841 packets/s
+22.08.13 20:35:00,306 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 20:36:01,295 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 20:36:13,088 DEBUG [main]: SerialTest      - Construction: 5 nanoseconds
+22.08.13 20:36:13,088 DEBUG [main]: SerialTest      - Java   serialization: 9969 nanoseconds, size = 339, throughput  ~= 200621 packets/s
+22.08.13 20:36:13,088 DEBUG [main]: SerialTest      - TWA    serialization: 1887 nanoseconds, size = 212, throughput  ~= 1059883 packets/s
+22.08.13 21:06:18,828 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 21:07:09,231 ERROR [main]: SerialTest      - Exception: 
+java.lang.ClassCastException: net.twagame.sandbox.serial.testclass.Media cannot be cast to net.twagame.sandbox.serial.testclass.MediaContent
+	at net.twagame.sandbox.serial.SerialTest$4.run(SerialTest.java:148)
+	at net.twagame.sandbox.serial.SerialTest.testRunnable(SerialTest.java:44)
+	at net.twagame.sandbox.serial.SerialTest.main(SerialTest.java:168)
+22.08.13 21:08:26,181 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 21:12:45,502 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 21:13:36,624 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 21:13:36,624 DEBUG [main]: SerialTest      - Java   serialization: 40610 nanoseconds, size = 830, throughput  ~= 49248 packets/s
+22.08.13 21:13:36,624 DEBUG [main]: SerialTest      - TWA    serialization: 6541 nanoseconds, size = 446, throughput  ~= 305763 packets/s
+22.08.13 21:13:36,624 DEBUG [main]: SerialTest      - Manual serialization: 4229 nanoseconds, size = 315, throughput  ~= 472925 packets/s
+22.08.13 21:30:00,636 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 21:34:22,816 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 21:35:14,672 DEBUG [main]: SerialTest      - Construction: 35 nanoseconds
+22.08.13 21:35:14,672 DEBUG [main]: SerialTest      - Java   serialization: 40726 nanoseconds, size = 830, throughput  ~= 49108 packets/s
+22.08.13 21:35:14,672 DEBUG [main]: SerialTest      - TWA    serialization: 6640 nanoseconds, size = 446, throughput  ~= 301204 packets/s
+22.08.13 21:35:14,672 DEBUG [main]: SerialTest      - Manual serialization: 4369 nanoseconds, size = 315, throughput  ~= 457770 packets/s
+22.08.13 21:53:57,416 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 21:54:39,912 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 21:59:02,242 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 21:59:54,472 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 21:59:54,472 DEBUG [main]: SerialTest      - Java   serialization: 40854 nanoseconds, size = 830, throughput  ~= 48954 packets/s
+22.08.13 21:59:54,472 DEBUG [main]: SerialTest      - TWA    serialization: 6735 nanoseconds, size = 446, throughput  ~= 296956 packets/s
+22.08.13 21:59:54,472 DEBUG [main]: SerialTest      - Manual serialization: 4261 nanoseconds, size = 315, throughput  ~= 469373 packets/s
+22.08.13 22:00:06,235 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 22:04:36,305 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 22:05:30,054 DEBUG [main]: SerialTest      - Construction: 36 nanoseconds
+22.08.13 22:05:30,054 DEBUG [main]: SerialTest      - Java   serialization: 42313 nanoseconds, size = 830, throughput  ~= 47266 packets/s
+22.08.13 22:05:30,054 DEBUG [main]: SerialTest      - TWA    serialization: 6843 nanoseconds, size = 446, throughput  ~= 292269 packets/s
+22.08.13 22:05:30,054 DEBUG [main]: SerialTest      - Manual serialization: 4351 nanoseconds, size = 315, throughput  ~= 459664 packets/s
+22.08.13 22:49:26,599 DEBUG [main]: SerialTest      - Warming up...
+22.08.13 22:54:17,196 DEBUG [main]: SerialTest      - Running tests...
+22.08.13 22:55:14,605 DEBUG [main]: SerialTest      - Construction: 38 nanoseconds
+22.08.13 22:55:14,605 DEBUG [main]: SerialTest      - Java   serialization: 45586 nanoseconds, size = 830, throughput  ~= 43873 packets/s
+22.08.13 22:55:14,605 DEBUG [main]: SerialTest      - TWA    serialization: 7033 nanoseconds, size = 446, throughput  ~= 284373 packets/s
+22.08.13 22:55:14,605 DEBUG [main]: SerialTest      - Manual serialization: 4881 nanoseconds, size = 315, throughput  ~= 409752 packets/s
